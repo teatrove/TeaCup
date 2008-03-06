@@ -1,0 +1,58 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
+<idea-plugin url="http://teatrove.sourceforge.net">
+    <name>TeaCup</name>
+    <description>Language Support for the scripting language Tea.</description>
+    <version>0.3</version>
+    <vendor email="Brian.R.Jackson@disney.com" url="http://www.disney.com">The Walt Disney Company</vendor>
+    <change-notes>
+    <![CDATA[
+        0.3
+        <ul>
+        <li>Added language injection into static text blocks based on contentType call.</li>
+        <li>Added JVM-level debugging support.  Templates must be under a folder marked as source. Viewing scoped variables requires Trove 1.6.2-espn.</li>
+        </ul>
+        <br>
+        Known-issues:
+        <ul>
+        <li>assignment current redefines a variable, blocking earlier assignments for reference resolution</li>
+        <li>Language injection doesn't maintain context across scriptlet blocks.</li>
+        <li>Language injection doesn't update contentType properly.  Requires restart if contentType changes.</li>
+        </ul>
+
+        0.2
+        <ul>
+        <li>Added brace matching</li>
+        <li>Added folding for block statements</li>
+        <li>Added commenting support (Ctrl-/, Ctrl-Shift-/)</li>
+        <li>Added reference resolution for local variables, foreach variables and template parameters</li>
+        <li>Find usage support for local variables, foreach variables and template parameters</li>
+        <li>Rename refactor support for local variables, foreach variables and template parameters</li>
+        <li>Fixed all parsing issues</li>
+        </ul>
+        <br>
+        Known-issues:
+        <ul>
+        <li>assignment current redefines a variable, blocking earlier assignments for reference resolution</li>
+        </ul>
+    ]]>
+    </change-notes>
+    <idea-version since-build="3000"/>
+    <application-components>
+        <component>
+            <implementation-class>com.go.teacup.intellij.lang.tea.TeaSupportLoader</implementation-class>
+        </component>
+    </application-components>
+    <project-components>
+        <component>
+            <implementation-class>com.go.teacup.intellij.lang.tea.index.TeaIndex</implementation-class>
+            <interface-class>com.go.teacup.intellij.lang.tea.index.TeaIndex</interface-class>
+        </component>
+        <component>
+            <implementation-class>com.go.teacup.intellij.lang.tea.index.TeaTypeEvaluateManager</implementation-class>
+            <interface-class>com.go.teacup.intellij.lang.tea.index.TeaTypeEvaluateManager</interface-class>
+        </component>
+        <component>
+            <implementation-class>com.go.teacup.intellij.lang.tea.TeaProjectSupportLoader</implementation-class>
+        </component>
+    </project-components>
+</idea-plugin>
