@@ -7,6 +7,7 @@ import com.go.teacup.intellij.lang.tea.index.TeaTypeEvaluateManager;
 import com.go.teacup.intellij.lang.tea.psi.*;
 import com.go.teacup.intellij.lang.tea.psi.util.TeaLookupUtil;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.util.Key;
 import com.intellij.openapi.util.TextRange;
 import com.intellij.openapi.util.text.StringUtil;
 import com.intellij.psi.*;
@@ -165,13 +166,13 @@ public class VariantsProcessor extends BaseTeaSymbolProcessor implements PsiScop
 
                 if (!visitedTypes.contains(type)) {
                   visitedTypes.add(type);
-                  final PsiElement parentElement = psiElement.getParent();
+//                  final PsiElement parentElement = psiElement.getParent();
 //                  if (parentElement instanceof TeaAssignmentStatement) {
 //                    TeaExpression expr = ((TeaAssignmentStatement)parentElement).getROperand();
 //                    while(expr instanceof TeaAssignmentStatement) expr = ((TeaAssignmentStatement)expr).getROperand();
 //                    allTypesResolved &= doEvalForExpr(expr, project, possibleNameIds, visitedTypes);
 //                  } else {
-                    allTypesResolved = false;
+//                    allTypesResolved = false;
 //                  }
                 }
               } else if (psiElement instanceof XmlToken) {
@@ -266,7 +267,7 @@ public class VariantsProcessor extends BaseTeaSymbolProcessor implements PsiScop
       return results;
     }
 
-    public boolean execute(PsiElement element, PsiSubstitutor substitutor) {
+    public boolean execute(PsiElement element, ResolveState resolveState) {
       if (element instanceof TeaNamedElement) {
         final TeaNamedElement namedElement = (TeaNamedElement)element;
 
@@ -274,6 +275,10 @@ public class VariantsProcessor extends BaseTeaSymbolProcessor implements PsiScop
       }
 
       return true;
+    }
+
+    public <T> T getHint(Key<T> hintKey) {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     public <T> T getHint(Class<T> hintClass) {

@@ -1,19 +1,20 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
-import com.go.teacup.intellij.lang.tea.psi.TeaTemplate;
-import com.go.teacup.intellij.lang.tea.psi.TeaSourceElement;
+import com.go.teacup.intellij.lang.tea.TeaElementTypes;
+import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
 import com.go.teacup.intellij.lang.tea.psi.TeaParameter;
 import com.go.teacup.intellij.lang.tea.psi.TeaParameterList;
+import com.go.teacup.intellij.lang.tea.psi.TeaSourceElement;
+import com.go.teacup.intellij.lang.tea.psi.TeaTemplate;
 import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
-import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
-import com.go.teacup.intellij.lang.tea.TeaElementTypes;
 import com.intellij.lang.ASTNode;
 import com.intellij.psi.PsiElement;
-import com.intellij.psi.PsiSubstitutor;
 import com.intellij.psi.PsiElementVisitor;
+import com.intellij.psi.ResolveState;
 import com.intellij.psi.scope.PsiScopeProcessor;
-import com.intellij.util.IncorrectOperationException;
 import com.intellij.util.Icons;
+import com.intellij.util.IncorrectOperationException;
+import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
 
@@ -52,6 +53,7 @@ public class TeaTemplateImpl extends TeaElementImpl implements TeaTemplate {
       return this;
     }
 
+    @Override
     public String getName() {
       final ASTNode name = findNameIdentifier();
       return name != null ? name.getText() : null;
@@ -61,26 +63,29 @@ public class TeaTemplateImpl extends TeaElementImpl implements TeaTemplate {
       return getNode().findChildByType(TeaTokenTypes.IDENTIFIER);
     }
 
+    @Override
     public int getTextOffset() {
       final ASTNode name = findNameIdentifier();
       return name != null ? name.getStartOffset() : super.getTextOffset();
     }
 
-    public boolean processDeclarations(PsiScopeProcessor processor,
-                                       PsiSubstitutor substitutor,
+    @Override
+    public boolean processDeclarations(@NotNull PsiScopeProcessor processor,
+                                       @NotNull ResolveState resolveState,
                                        PsiElement lastParent,
-                                       PsiElement place) {
+                                       @NotNull PsiElement place) {
       if (lastParent != null && lastParent.getParent() == this) {
         final TeaParameter[] params = getParameterList().getParameters();
         for (TeaParameter param : params) {
-          if (!processor.execute(param, substitutor)) return false;
+          if (!processor.execute(param, resolveState)) return false;
         }
       }
 
-      return processor.execute(this, substitutor);
+      return processor.execute(this, resolveState);
     }
 
-    public void accept(PsiElementVisitor visitor) {
+    @Override
+    public void accept(@NotNull PsiElementVisitor visitor) {
       if (visitor instanceof TeaElementVisitor) {
         ((TeaElementVisitor)visitor).visitTeaTemplateDeclaration(this);
       }
@@ -88,6 +93,7 @@ public class TeaTemplateImpl extends TeaElementImpl implements TeaTemplate {
         visitor.visitElement(this);
       }
     }
+    @Override
     public Icon getIcon(int flags) {
       return Icons.METHOD_ICON;
     }

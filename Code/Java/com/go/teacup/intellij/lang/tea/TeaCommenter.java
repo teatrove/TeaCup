@@ -22,4 +22,12 @@ public class TeaCommenter implements Commenter {
     public String getBlockCommentSuffix() {
       return "*/";
     }
+
+    public String getCommentedBlockCommentPrefix() {
+        return null;
+    }
+
+    public String getCommentedBlockCommentSuffix() {
+        return null;
+    }
 }

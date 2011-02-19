@@ -1,11 +1,16 @@
-package com.go.teacup.intellij.lang.tea;
+package com.go.teacup.intellij.lang.tea.highlighting;
 
 import com.intellij.lexer.Lexer;
 import com.intellij.openapi.editor.HighlighterColors;
+import com.intellij.openapi.editor.SyntaxHighlighterColors;
+import com.intellij.openapi.editor.XmlHighlighterColors;
+import com.intellij.openapi.editor.colors.EditorColors;
 import com.intellij.openapi.editor.colors.TextAttributesKey;
 import com.intellij.openapi.fileTypes.SyntaxHighlighterBase;
 import com.intellij.psi.StringEscapesTokenTypes;
 import com.intellij.psi.tree.IElementType;
+import com.go.teacup.intellij.lang.tea.TeaLexer;
+import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;
@@ -26,17 +31,17 @@ public class TeaHighlighter extends SyntaxHighlighterBase {
     }
     static final TextAttributesKey TEA_KEYWORD = TextAttributesKey.createTextAttributesKey(
                                                   "TEA.KEYWORD",
-                                                  HighlighterColors.JAVA_KEYWORD.getDefaultAttributes()
+                                                  SyntaxHighlighterColors.KEYWORD.getDefaultAttributes()
                                                 );
 
     static final TextAttributesKey TEA_STRING = TextAttributesKey.createTextAttributesKey(
                                                  "TEA.STRING",
-                                                 HighlighterColors.JAVA_STRING.getDefaultAttributes()
+                                                 SyntaxHighlighterColors.STRING.getDefaultAttributes()
                                                );
 
     static final TextAttributesKey TEA_NUMBER = TextAttributesKey.createTextAttributesKey(
                                                  "TEA.NUMBER",
-                                                 HighlighterColors.JAVA_NUMBER.getDefaultAttributes()
+                                                 SyntaxHighlighterColors.NUMBER.getDefaultAttributes()
                                                );
 
 //    static final TextAttributesKey TEA_REGEXP = TextAttributesKey.createTextAttributesKey(
@@ -46,12 +51,12 @@ public class TeaHighlighter extends SyntaxHighlighterBase {
 
     static final TextAttributesKey TEA_LINE_COMMENT = TextAttributesKey.createTextAttributesKey(
                                                        "TEA.LINE_COMMENT",
-                                                       HighlighterColors.JAVA_LINE_COMMENT.getDefaultAttributes()
+                                                       SyntaxHighlighterColors.LINE_COMMENT.getDefaultAttributes()
                                                      );
 
     static final TextAttributesKey TEA_BLOCK_COMMENT = TextAttributesKey.createTextAttributesKey(
                                                         "TEA.BLOCK_COMMENT",
-                                                        HighlighterColors.JAVA_BLOCK_COMMENT.getDefaultAttributes()
+                                                        SyntaxHighlighterColors.JAVA_BLOCK_COMMENT.getDefaultAttributes()
                                                       );
 
 //    static final TextAttributesKey TEA_DOC_COMMENT = TextAttributesKey.createTextAttributesKey(
@@ -61,37 +66,37 @@ public class TeaHighlighter extends SyntaxHighlighterBase {
 
     static final TextAttributesKey TEA_OPERATION_SIGN = TextAttributesKey.createTextAttributesKey(
                                                          "TEA.OPERATION_SIGN",
-                                                         HighlighterColors.JAVA_OPERATION_SIGN.getDefaultAttributes()
+                                                         SyntaxHighlighterColors.OPERATION_SIGN.getDefaultAttributes()
                                                        );
 
     static final TextAttributesKey TEA_PARENTHS = TextAttributesKey.createTextAttributesKey(
                                                    "TEA.PARENTHS",
-                                                   HighlighterColors.JAVA_PARENTHS.getDefaultAttributes()
+                                                   SyntaxHighlighterColors.PARENTHS.getDefaultAttributes()
                                                  );
 
     static final TextAttributesKey TEA_BRACKETS = TextAttributesKey.createTextAttributesKey(
                                                    "TEA.BRACKETS",
-                                                   HighlighterColors.JAVA_BRACKETS.getDefaultAttributes()
+                                                   SyntaxHighlighterColors.BRACKETS.getDefaultAttributes()
                                                  );
 
     static final TextAttributesKey TEA_BRACES = TextAttributesKey.createTextAttributesKey(
                                                  "TEA.BRACES",
-                                                 HighlighterColors.JAVA_BRACES.getDefaultAttributes()
+                                                 SyntaxHighlighterColors.BRACES.getDefaultAttributes()
                                                );
 
     static final TextAttributesKey TEA_COMMA = TextAttributesKey.createTextAttributesKey(
                                                 "TEA.COMMA",
-                                                HighlighterColors.JAVA_COMMA.getDefaultAttributes()
+                                                SyntaxHighlighterColors.COMMA.getDefaultAttributes()
                                               );
 
     static final TextAttributesKey TEA_DOT = TextAttributesKey.createTextAttributesKey(
                                               "TEA.DOT",
-                                              HighlighterColors.JAVA_DOT.getDefaultAttributes()
+                                              SyntaxHighlighterColors.DOT.getDefaultAttributes()
                                             );
 
     static final TextAttributesKey TEA_SEMICOLON = TextAttributesKey.createTextAttributesKey(
                                                     "TEA.SEMICOLON",
-                                                    HighlighterColors.JAVA_SEMICOLON.getDefaultAttributes()
+                                                    SyntaxHighlighterColors.JAVA_SEMICOLON.getDefaultAttributes()
                                                   );
 
     static final TextAttributesKey TEA_BAD_CHARACTER = TextAttributesKey.createTextAttributesKey(
@@ -104,24 +109,24 @@ public class TeaHighlighter extends SyntaxHighlighterBase {
 //                                                    );
     static final TextAttributesKey TEA_DOC_MARKUP = TextAttributesKey.createTextAttributesKey(
                                                       "TEA.DOC_MARKUP",
-                                                      HighlighterColors.JAVA_DOC_MARKUP.getDefaultAttributes()
+                                                      SyntaxHighlighterColors.DOC_COMMENT_MARKUP.getDefaultAttributes()
                                                     );
     static final TextAttributesKey TEA_VALID_STRING_ESCAPE = TextAttributesKey.createTextAttributesKey(
                                                       "TEA.VALID_STRING_ESCAPE",
-                                                      HighlighterColors.JAVA_VALID_STRING_ESCAPE.getDefaultAttributes()
+                                                      SyntaxHighlighterColors.VALID_STRING_ESCAPE.getDefaultAttributes()
                                                     );
     static final TextAttributesKey TEA_INVALID_STRING_ESCAPE = TextAttributesKey.createTextAttributesKey(
                                                       "TEA.INVALID_STRING_ESCAPE",
-                                                      HighlighterColors.JAVA_INVALID_STRING_ESCAPE.getDefaultAttributes()
+                                                      SyntaxHighlighterColors.INVALID_STRING_ESCAPE.getDefaultAttributes()
                                                     );
 
     static final TextAttributesKey TEA_SCRIPTING_BACKGROUND = TextAttributesKey.createTextAttributesKey(
                                                       "TEA.SCRIPTING_BACKGROUND",
-                                                      HighlighterColors.JSP_SCRIPTING_BACKGROUND.getDefaultAttributes()
+                                                      EditorColors.INJECTED_LANGUAGE_FRAGMENT.getDefaultAttributes()
                                                     );
     static final TextAttributesKey TEA_SCRIPTING_FOREGROUND = TextAttributesKey.createTextAttributesKey(
                                                       "TEA.SCRIPTING_FOREGROUND",
-                                                      HighlighterColors.XML_TAG_NAME.getDefaultAttributes()
+                                                      XmlHighlighterColors.XML_TAG_NAME.getDefaultAttributes()
                                                     );
 //    static final TextAttributesKey TEA_DEBUG = TextAttributesKey.createTextAttributesKey(
 //                                                      "TEA.DEBUG",
@@ -138,7 +143,7 @@ public class TeaHighlighter extends SyntaxHighlighterBase {
       keys1 = new HashMap<IElementType, TextAttributesKey>();
       keys2 = new HashMap<IElementType, TextAttributesKey>();
 
-      fillMap(keys1, TeaTokenTypes.KEYWORDS, TEA_KEYWORD);
+      SyntaxHighlighterBase.fillMap(keys1, TeaTokenTypes.KEYWORDS, TEA_KEYWORD);
       fillMap(keys1, TeaTokenTypes.OPERATIONS, TEA_OPERATION_SIGN);
 
       keys1.put(StringEscapesTokenTypes.VALID_STRING_ESCAPE_TOKEN, TEA_VALID_STRING_ESCAPE);

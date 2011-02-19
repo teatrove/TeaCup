@@ -33,7 +33,7 @@ public class TeaParsingLexer extends FlexAdapter {
             if(type == TeaTokenTypes.WHITE_SPACE) {
                 boolean hasLineFeed = false;
                 for(int i = super.getTokenStart(); i < super.getTokenEnd(); i++) {
-                    if(getBuffer()[i] == '\n') {
+                    if(getBufferSequence().charAt(i) == '\n') {
                         hasLineFeed = true;
                         break;
                     }
@@ -60,7 +60,7 @@ public class TeaParsingLexer extends FlexAdapter {
             if(onBreak && type == TeaTokenTypes.WHITE_SPACE) {
                 boolean hasLineFeed = false;
                 for(int i = super.getTokenStart(); i < super.getTokenEnd(); i++) {
-                    if(getBuffer()[i] == '\n') {
+                    if(getBufferSequence().charAt(i) == '\n') {
                         hasLineFeed = true;
                         break;
                     }

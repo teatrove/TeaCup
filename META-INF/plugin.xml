@@ -1,11 +1,23 @@
 <!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
-<idea-plugin url="http://teatrove.sourceforge.net">
+<idea-plugin version="2" use-idea-classloader="true">
     <name>TeaCup</name>
+    <id>tea</id>
     <description>Language Support for the scripting language Tea.</description>
-    <version>0.3</version>
+    <version>0.4</version>
+    <category>Languages/Tea</category>
     <vendor email="Brian.R.Jackson@disney.com" url="http://www.disney.com">The Walt Disney Company</vendor>
     <change-notes>
     <![CDATA[
+        0.4
+        <ul>
+        <li>Rewrote for IDEA 8.1</li>
+        </ul>
+        <br>
+        Known-issues:
+        <ul>
+        <li>Adding new lines in plain-text blocks</li>
+        </ul>
+
         0.3
         <ul>
         <li>Added language injection into static text blocks based on contentType call.</li>
@@ -37,11 +49,93 @@
     ]]>
     </change-notes>
     <idea-version since-build="3000"/>
-    <application-components>
-        <component>
-            <implementation-class>com.go.teacup.intellij.lang.tea.TeaSupportLoader</implementation-class>
-        </component>
-    </application-components>
+    <extensions defaultExtensionNs="com.intellij">
+        <errorHandler implementation="com.intellij.diagnostic.ITNReporter"/>
+        <colorSettingsPage implementation="com.go.teacup.intellij.lang.tea.highlighting.TeaColorsAndFontsPage"/>
+        <!--<gotoSymbolContributor implementation="com.intellij.lang.javascript.index.JavaScriptSymbolContributor"/>-->
+        <!--<gotoClassContributor implementation="com.intellij.lang.javascript.index.JavaScriptClassContributor"/>-->
+
+        <fileTypeFactory implementation="com.go.teacup.intellij.lang.tea.TeaSupportLoader"/>
+        <syntaxHighlighter key="Tea" factoryClass="com.go.teacup.intellij.lang.tea.highlighting.TeaSyntaxHighlighterProvider"/>
+
+        <lang.substitutor language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.psi.impl.TeaLanguageSubstitutor"/>
+
+        <lang.parserDefinition language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.TeaParserDefinition"/>
+
+
+        <annotator language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.validation.TeaAnnotatingVisitor"/>
+        <!--<lang.refactoringSupport language="JavaScript" implementationClass="com.intellij.lang.javascript.refactoring.JavascriptRefactoringSupportProvider"/>-->
+        <!--<lang.formatter language="JavaScript" implementationClass="com.intellij.lang.javascript.formatter.JavascriptFormattingModelBuilder"/>-->
+        <!--<lang.documentationProvider language="JavaScript" implementationClass="com.intellij.javascript.documentation.JSDocumentationProvider"/>-->
+
+        <!--<lang.namesValidator language="GWT JavaScript" implementationClass="com.intellij.lang.javascript.refactoring.GwtNamesValidator"/>-->
+        <!--<lang.namesValidator language="JavaScript Object Notation" implementationClass="com.intellij.lang.javascript.refactoring.JSONNamesValidator"/>-->
+        <!--<lang.namesValidator language="ECMA Script Level 4" implementationClass="com.intellij.lang.javascript.refactoring.ECMAL4NamesValidator"/>-->
+        <!--<lang.namesValidator language="JavaScript" implementationClass="com.intellij.lang.javascript.refactoring.BasicJavascriptNamesValidator"/>-->
+
+        <lang.surroundDescriptor language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.surroundWith.TeaExpressionSurroundDescriptor"/>
+        <lang.surroundDescriptor language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.surroundWith.TeaStatementsSurroundDescriptor"/>
+
+        <!--<codeInsight.gotoSuper language="JavaScript" implementationClass="com.intellij.lang.javascript.navigation.JavaScriptGotoSuperHandler"/>-->
+        <!--<codeInsight.overrideMethod language="JavaScript" implementationClass="com.intellij.lang.javascript.generation.JavaScriptOverrideMethodsHandler"/>-->
+        <!--<codeInsight.implementMethod language="JavaScript" implementationClass="com.intellij.lang.javascript.generation.JavaScriptImplementMethodsHandler"/>-->
+
+        <lang.findUsagesProvider language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.findUsages.TeaFindUsagesProvider"/>
+
+        <lang.commenter language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.TeaCommenter"/>
+
+        <lang.braceMatcher language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.highlighting.TeaBraceMatcher"/>
+
+        <lang.foldingBuilder language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.folding.TeaFoldingBuilder"/>
+        <!--<lang.psiStructureViewFactory language="JavaScript" implementationClass="com.intellij.lang.javascript.structureView.JSStructureViewBuilderFactory"/>-->
+
+        <!--<codeInsight.parameterInfo language="JavaScript" implementationClass="com.intellij.javascript.JSParameterInfoHandler"/>-->
+        <!--<fileStructureGroupRuleProvider implementation="com.intellij.lang.javascript.findUsages.JavaScriptClassGroupRuleProvider"/>-->
+        <!--<fileStructureGroupRuleProvider implementation="com.intellij.lang.javascript.findUsages.JavaScriptFunctionGroupRuleProvider"/>-->
+
+        <!--<stubIndex implementation="com.intellij.lang.javascript.psi.stubs.JSNameIndex"/>-->
+        <!--<stubIndex implementation="com.intellij.lang.javascript.psi.stubs.JSQualifiedElementIndex"/>-->
+        <!--<stubIndex implementation="com.intellij.lang.javascript.psi.stubs.JSSuperClassIndex"/>-->
+        <!--<stubIndex implementation="com.intellij.lang.javascript.psi.stubs.JSImplementedInterfacesIndex"/>-->
+
+        <!--<fileTypeIndentOptionsProvider implementation="com.intellij.lang.javascript.formatter.JavaScriptIndentOptionsProvider"/>-->
+        <!--<codeStyleSettingsProvider implementation="com.intellij.lang.javascript.formatter.JSCodeStyleSettingsProvider"/>-->
+        <!--<liveTemplateContext implementation="com.intellij.lang.javascript.JavaScriptCodeContextType"/>-->
+
+        <!--<codeInsight.lineMarkerProvider language="JavaScript" implementationClass="com.intellij.lang.javascript.highlighting.JavaScriptLineMarkerProvider"/>-->
+        <!--<typeDeclarationProvider implementation="com.intellij.lang.javascript.navigation.JavaScriptTypeDeclarationProvider"/>-->
+        <!--<gotoTargetRendererProvider implementation="com.intellij.lang.javascript.search.JSGotoTargetRendererProvider"/>-->
+        <!--<definitionsSearch implementation="com.intellij.lang.javascript.search.JSDefinitionsSearchExecutor"/>-->
+        <!--<referencesSearch implementation="com.intellij.lang.javascript.search.JSReferencesSearchExecutor"/>-->
+        <!--<declarationRangeHandler key="com.intellij.lang.javascript.psi.JSNamedElement"-->
+                                 <!--implementationClass="com.intellij.lang.javascript.search.JSDeclarationRangeHandler"/>-->
+        <!--<multiHostInjector implementation="com.intellij.lang.javascript.JSLanguageInjector"/>-->
+        <!--<stubElementTypeHolder class="com.intellij.lang.javascript.JSElementTypes"/>-->
+        <!--<lang.importOptimizer language="ECMA Script Level 4" implementationClass="com.intellij.lang.javascript.flex.ECMAScriptImportOptimizer" />-->
+        <!--<lang.smartEnterProcessor language="JavaScript" implementationClass="com.intellij.lang.javascript.JSSmartEnterProcessor"/>-->
+        <!--<lang.smartEnterProcessor language="ECMA Script Level 4" implementationClass="com.intellij.lang.javascript.JSSmartEnterProcessor"/>-->
+
+        <!--<lang.implementationTextSelectioner language="JavaScript" implementationClass="com.intellij.javascript.JSImplementationTextSelectioner"/>-->
+        <!--<lang.elementManipulator forClass="com.intellij.lang.javascript.psi.impl.JSIncludeDirectiveImpl"-->
+          <!--implementationClass="com.intellij.javascript.manipulators.JSIncludeDirectiveManipulator"/>-->
+        <!--<lang.elementManipulator forClass="com.intellij.lang.javascript.psi.JSAttributeNameValuePair"-->
+          <!--implementationClass="com.intellij.javascript.manipulators.JSAttributeNameValuePairManipulator"/>-->
+        <!--<lang.elementManipulator forClass="com.intellij.lang.javascript.psi.JSDocTag"-->
+          <!--implementationClass="com.intellij.javascript.manipulators.JSDocTagManipulator"/>-->
+
+        <!--<completion.contributor implementation="com.intellij.javascript.JSCompletionContributor"/>-->
+
+        <!--<liveTemplateMacro implementation="com.intellij.javascript.JSClassNameMacro"/>-->
+        <!--<liveTemplateMacro implementation="com.intellij.javascript.JSMethodNameMacro"/>-->
+
+        <!--<inspectionToolProvider implementation="com.intellij.lang.javascript.inspections.JSInspectionToolProvider"/>-->
+        <!--<targetElementEvaluator language="JavaScript" implementationClass="com.intellij.lang.javascript.JSTargetElementEvaluator"/>-->
+    </extensions>
+    <!--<application-components>-->
+        <!--<component>-->
+            <!--<implementation-class>com.go.teacup.intellij.lang.tea.TeaSupportLoader</implementation-class>-->
+        <!--</component>-->
+    <!--</application-components>-->
     <project-components>
         <component>
             <implementation-class>com.go.teacup.intellij.lang.tea.index.TeaIndex</implementation-class>

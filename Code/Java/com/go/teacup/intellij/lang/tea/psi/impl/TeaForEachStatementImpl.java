@@ -1,17 +1,18 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
-import com.go.teacup.intellij.lang.tea.psi.TeaForEachStatement;
-import com.go.teacup.intellij.lang.tea.psi.TeaVariable;
-import com.go.teacup.intellij.lang.tea.psi.TeaExpression;
-import com.go.teacup.intellij.lang.tea.psi.TeaStatement;
-import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
 import com.go.teacup.intellij.lang.tea.TeaElementTypes;
+import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
+import com.go.teacup.intellij.lang.tea.psi.TeaExpression;
+import com.go.teacup.intellij.lang.tea.psi.TeaForEachStatement;
+import com.go.teacup.intellij.lang.tea.psi.TeaStatement;
+import com.go.teacup.intellij.lang.tea.psi.TeaVariable;
 import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
 import com.intellij.lang.ASTNode;
-import com.intellij.psi.scope.PsiScopeProcessor;
-import com.intellij.psi.PsiSubstitutor;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiElementVisitor;
+import com.intellij.psi.ResolveState;
+import com.intellij.psi.scope.PsiScopeProcessor;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * User: jacksbrr
@@ -75,13 +76,14 @@ public class TeaForEachStatementImpl extends TeaStatementImpl implements TeaForE
       return null;
     }
 
-    public boolean processDeclarations(PsiScopeProcessor processor,
-                                       PsiSubstitutor substitutor,
+    @Override
+    public boolean processDeclarations(@NotNull PsiScopeProcessor processor,
+                                       @NotNull ResolveState resolveState,
                                        PsiElement lastParent,
-                                       PsiElement place) {
+                                       @NotNull PsiElement place) {
       if (lastParent != null) {
         final TeaVariable var = getDeclarationStatement();
-        if (var != null) return processor.execute(var, substitutor);
+        if (var != null) return processor.execute(var, resolveState);
         else {
           if (!processor.execute(getVariableExpression(), null)) return false;
         }
@@ -89,7 +91,7 @@ public class TeaForEachStatementImpl extends TeaStatementImpl implements TeaForE
       return true;
     }
 
-    public void accept(PsiElementVisitor visitor) {
+    public void accept(@NotNull PsiElementVisitor visitor) {
       if (visitor instanceof TeaElementVisitor) {
         ((TeaElementVisitor)visitor).visitTeaForEachStatement(this);
       }

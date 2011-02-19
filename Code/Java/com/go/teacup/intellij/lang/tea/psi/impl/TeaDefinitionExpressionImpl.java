@@ -1,21 +1,20 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
-import com.go.teacup.intellij.lang.tea.psi.TeaDefinitionExpression;
-import com.go.teacup.intellij.lang.tea.psi.TeaReferenceExpression;
-import com.go.teacup.intellij.lang.tea.psi.TeaExpression;
-import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
 import com.go.teacup.intellij.lang.tea.TeaElementTypes;
+import com.go.teacup.intellij.lang.tea.psi.TeaDefinitionExpression;
+import com.go.teacup.intellij.lang.tea.psi.TeaExpression;
+import com.go.teacup.intellij.lang.tea.psi.TeaReferenceExpression;
+import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
 import com.intellij.lang.ASTNode;
-import com.intellij.psi.PsiElementVisitor;
 import com.intellij.psi.PsiElement;
-import com.intellij.psi.PsiSubstitutor;
+import com.intellij.psi.PsiElementVisitor;
+import com.intellij.psi.ResolveState;
 import com.intellij.psi.scope.PsiScopeProcessor;
-import com.intellij.util.IncorrectOperationException;
 import com.intellij.util.Icons;
+import com.intellij.util.IncorrectOperationException;
+import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
-
-import org.jetbrains.annotations.NotNull;
 
 /**
  * User: jacksbrr
@@ -60,8 +59,9 @@ public class TeaDefinitionExpressionImpl extends TeaExpressionImpl implements Te
     return Icons.VARIABLE_ICON;
   }
 
-    public boolean processDeclarations(PsiScopeProcessor processor, PsiSubstitutor substitutor, PsiElement lastParent, PsiElement place) {
+    @Override
+    public boolean processDeclarations(@NotNull PsiScopeProcessor processor, @NotNull ResolveState resolveState, PsiElement lastParent, @NotNull PsiElement place) {
         final TeaExpression expression = getExpression();
-        return expression instanceof TeaReferenceExpression && processor.execute(expression, substitutor);
+        return expression instanceof TeaReferenceExpression && processor.execute(expression, resolveState);
     }
 }

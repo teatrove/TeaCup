@@ -1,7 +1,6 @@
 package com.go.teacup.intellij.lang.tea.validation;
 
 import com.go.teacup.intellij.lang.tea.psi.*;
-import com.go.teacup.intellij.lang.tea.psi.impl.TeaSubstitutionStatementImpl;
 import com.intellij.psi.PsiElementVisitor;
 import com.intellij.psi.PsiReferenceExpression;
 
@@ -11,7 +10,7 @@ import com.intellij.psi.PsiReferenceExpression;
  */
 public class TeaElementVisitor extends PsiElementVisitor {
     public void visitReferenceExpression(PsiReferenceExpression expression) {
-        visitExpression(expression);
+        visitReferenceExpression(expression);
     }
 
     public void visitTeaCallExpression(final TeaCallExpression node) {

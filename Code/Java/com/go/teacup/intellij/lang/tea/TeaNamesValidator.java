@@ -12,13 +12,13 @@ public class TeaNamesValidator implements NamesValidator {
     private Lexer lexer = new TeaLexer();
 
   public boolean isKeyword(String name, Project project) {
-    lexer.start(name.toCharArray(), 0, name.length());
+    lexer.start(name, 0, name.length());
     return TeaTokenTypes.KEYWORDS.contains( lexer.getTokenType() ) &&
       lexer.getTokenEnd() == name.length();
   }
 
   public boolean isIdentifier(String name, Project project) {
-    lexer.start(name.toCharArray(), 0, name.length());
+    lexer.start(name, 0, name.length());
     return lexer.getTokenType() == TeaTokenTypes.IDENTIFIER &&
       lexer.getTokenEnd() == name.length();
   }}

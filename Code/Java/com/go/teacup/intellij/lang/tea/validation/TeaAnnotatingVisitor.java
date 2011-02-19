@@ -1,7 +1,7 @@
 package com.go.teacup.intellij.lang.tea.validation;
 
 import com.go.teacup.intellij.lang.tea.TeaBundle;
-import com.go.teacup.intellij.lang.tea.TeaElementType;
+import com.go.teacup.intellij.lang.tea.psi.impl.stubs.TeaStubElementType;
 import com.go.teacup.intellij.lang.tea.psi.*;
 import com.go.teacup.intellij.lang.tea.psi.resolve.ResolveProcessor;
 import com.go.teacup.intellij.lang.tea.psi.resolve.TeaResolveUtil;
@@ -9,8 +9,8 @@ import com.intellij.lang.ASTNode;
 import com.intellij.lang.annotation.AnnotationHolder;
 import com.intellij.lang.annotation.Annotator;
 import com.intellij.psi.PsiElement;
-import com.intellij.psi.PsiSubstitutor;
 import com.intellij.psi.PsiWhiteSpace;
+import com.intellij.psi.ResolveState;
 import com.intellij.psi.scope.PsiScopeProcessor;
 import com.intellij.psi.util.PsiTreeUtil;
 
@@ -39,11 +39,12 @@ public class TeaAnnotatingVisitor extends TeaElementVisitor implements Annotator
 
     private void checkForDuplicateDeclaration(final String name, final PsiElement decl, final ASTNode nameIdentifier) {
       final ResolveProcessor processor = new ResolveProcessor(name) {
-        public boolean execute(PsiElement element, PsiSubstitutor substitutor) {
+        @Override
+        public boolean execute(PsiElement element, ResolveState resolveState ) {
           if (element == decl) return true;
           if (!decl.getClass().isInstance(element)) return true;
           if (decl instanceof TeaParameter && decl.getParent() != element.getParent()) return false;
-          return super.execute(element, substitutor);
+          return super.execute(element, resolveState);
         }
 
         public <T> T getHint(Class<T> hintClass) {
@@ -109,7 +110,7 @@ public class TeaAnnotatingVisitor extends TeaElementVisitor implements Annotator
       // Actully skip outer language elements
       if (name != null &&
           ( next == null ||
-            next.getElementType() instanceof TeaElementType ||
+            next.getElementType() instanceof TeaStubElementType ||
             next.getPsi() instanceof PsiWhiteSpace)
          ) {
           // TODO: duplication declaration annotation is incorrect

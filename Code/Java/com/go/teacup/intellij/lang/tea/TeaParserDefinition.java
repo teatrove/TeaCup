@@ -18,6 +18,7 @@ import com.go.teacup.intellij.lang.tea.psi.factory.SimplePsiElementFactory;
 import com.go.teacup.intellij.lang.tea.psi.TeaFile;
 import com.go.teacup.intellij.lang.tea.psi.impl.*;
 import com.go.teacup.intellij.lang.tea.parsing.TeaParser;
+import com.intellij.psi.util.PsiUtil;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -50,6 +51,11 @@ public class TeaParserDefinition implements ParserDefinition {
     @NotNull
     public TokenSet getCommentTokens() {
         return TeaTokenTypes.COMMENTS;
+    }
+
+    @NotNull
+    public TokenSet getStringLiteralElements() {
+        return  TokenSet.create(TeaTokenTypes.STRING_LITERAL, TeaTokenTypes.SINGLE_QUOTE_STRING_LITERAL);
     }
 
     @NotNull
@@ -143,14 +149,14 @@ public class TeaParserDefinition implements ParserDefinition {
           return new TeaTemplateCallExpressionImpl(node);
         }
         else if(type == TeaElementTypes.PLAIN_TEXT) {
-            return new TeaPlainTextImpl(node, type);
+            return new TeaPlainTextImpl(type, node.getChars());
         }
         else if (type == TeaElementTypes.SUBSTITUTION_STATEMENT) {
           return new TeaSubstitutionStatementImpl(node);
         }
 
         //TODO: create PsiElement instances here!!
-        return new ASTWrapperPsiElement(node);
+        return PsiUtil.NULL_PSI_ELEMENT;
     }
 
     public PsiFile createFile(FileViewProvider viewProvider) {
@@ -159,6 +165,6 @@ public class TeaParserDefinition implements ParserDefinition {
 
     public SpaceRequirements spaceExistanceTypeBetweenTokens(ASTNode left, ASTNode right) {
         final Lexer lexer = createLexer(left.getPsi().getProject());
-        return LanguageUtil.canStickTokensTogetherByLexer(left, right, lexer, 0);
+        return LanguageUtil.canStickTokensTogetherByLexer(left, right, lexer);
     }
 }

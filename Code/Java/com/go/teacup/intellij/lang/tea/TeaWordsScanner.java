@@ -16,7 +16,7 @@ public class TeaWordsScanner extends DefaultWordsScanner {
         super(  new TeaLexer(),
                 TokenSet.create(TeaTokenTypes.IDENTIFIER),
                 TeaTokenTypes.COMMENTS,
-                TokenSet.create(TeaTokenTypes.STRING_LITERAL)
+                TokenSet.create(TeaTokenTypes.NUMERIC_LITERAL, TeaTokenTypes.STRING_LITERAL, TeaTokenTypes.SINGLE_QUOTE_STRING_LITERAL)
         );
     }
 }

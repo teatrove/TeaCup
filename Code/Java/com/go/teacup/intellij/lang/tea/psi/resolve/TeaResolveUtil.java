@@ -57,7 +57,7 @@ public class TeaResolveUtil {
 
       PsiElement cur = elt;
       do {
-        if (!cur.processDeclarations(processor, PsiSubstitutor.EMPTY, cur == elt ? lastParent : null, place)) {
+        if (!cur.processDeclarations(processor, ResolveState.initial(), cur == elt ? lastParent : null, place)) {
           if (processor instanceof ResolveProcessor) {
             return ((ResolveProcessor)processor).getResult();
           }
@@ -86,6 +86,7 @@ public class TeaResolveUtil {
       return treeWalkUp(processor, parentElement, elt, place, terminatingParent);
     }
 
+    @NotNull
     private static PsiElement[] getChildren(final PsiElement element) {
       CachedValue<PsiElement[]> value = element.getUserData(ourFileElementsValueKey);
 
@@ -101,17 +102,19 @@ public class TeaResolveUtil {
       return value.getValue();
     }
 
+    private static PsiElement[] EMPTY_PSI_ELEMENT_ARRAY = new PsiElement[0];
+
     @Nullable
     private static TeaElement processFunctionDeclarations(final @NotNull PsiScopeProcessor processor, final @Nullable PsiElement context) {
-      PsiElement[] children = context instanceof TeaFile ? getChildren(context) : null;
+      PsiElement[] children = context instanceof TeaFile ? getChildren(context) : EMPTY_PSI_ELEMENT_ARRAY;
 
       if (context != null) {
-        int index = children != null ? children.length - 1:-1;
+        int index = children.length - 1;
         PsiElement cur = index >= 0 ? children[index]:context.getLastChild();
 
         while (cur != null) {
           if (cur instanceof TeaTemplate) {
-            if (!processor.execute(cur, PsiSubstitutor.EMPTY)) {
+            if (!processor.execute(cur, ResolveState.initial())) {
               if (processor instanceof ResolveProcessor) {
                 return ((ResolveProcessor)processor).getResult();
               }

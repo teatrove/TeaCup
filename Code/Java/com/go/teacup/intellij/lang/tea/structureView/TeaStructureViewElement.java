@@ -15,7 +15,7 @@ import javax.swing.*;
  * User: JACKSBRR
  * Created: Apr 3, 2007 5:58:33 PM
  */
-public class TeaStructureViewElement implements StructureViewTreeElement<TeaElement> {
+public class TeaStructureViewElement implements StructureViewTreeElement {
     private TeaElement value;
 
     public TeaStructureViewElement(TeaElement element) {

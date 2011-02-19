@@ -3,6 +3,7 @@ package com.go.teacup.intellij.lang.tea.index;
 import com.go.teacup.intellij.lang.tea.TeaBundle;
 import com.go.teacup.intellij.lang.tea.TeaSupportLoader;
 import com.go.teacup.intellij.lang.tea.psi.TeaFile;
+import com.go.teacup.intellij.lang.tea.psi.impl.TeaChangeUtil;
 import com.intellij.lang.PsiBuilder;
 import com.intellij.navigation.NavigationItem;
 import com.intellij.openapi.application.ApplicationManager;
@@ -287,7 +288,7 @@ public class TeaIndex implements ProjectComponent {
     }
 
     private File getCacheLocation(final String dirName) {
-      final String cacheFileName = myProject.getName() + "." + Integer.toHexString(FileUtil.toSystemIndependentName(myProject.getProjectFilePath()).hashCode());
+      final String cacheFileName = myProject.getName() + "." + Integer.toHexString(FileUtil.toSystemIndependentName(myProject.getPresentableUrl()).hashCode());
       return new File(PathManager.getSystemPath() + File.separator + dirName + File.separator + cacheFileName);
     }
 
@@ -369,11 +370,11 @@ public class TeaIndex implements ProjectComponent {
       final String s = translateFile(fileName);
 
       if (s != null) {
-        final PsiElementFactory psiElementFactory = PsiManager.getInstance(myProject).getElementFactory();
+        final PsiFileFactory psiFileFactory = TeaChangeUtil.getPsiFileFactory(myProject);
 
         try {
           // This method does not expand tree
-          final Method method = psiElementFactory.getClass().getMethod(
+          final Method method = psiFileFactory.getClass().getMethod(
             "createFileFromText",
             String.class,
             FileType.class,
@@ -383,8 +384,8 @@ public class TeaIndex implements ProjectComponent {
             Boolean.TYPE
           );
           return (TeaFile)method.invoke(
-            psiElementFactory,
-            PREDEFINES_PREFIX + type + ".js",
+            psiFileFactory,
+            PREDEFINES_PREFIX + type + ".tea",
             TeaSupportLoader.TEA,
             s,
             LocalTimeCounter.currentTime(),
@@ -393,8 +394,8 @@ public class TeaIndex implements ProjectComponent {
           );
         }
         catch (Exception e) {
-          return (TeaFile)psiElementFactory.createFileFromText(
-            PREDEFINES_PREFIX + type + ".js",
+          return (TeaFile)psiFileFactory.createFileFromText(
+            PREDEFINES_PREFIX + type + ".tea",
             TeaSupportLoader.TEA,
             s,
             LocalTimeCounter.currentTime(),

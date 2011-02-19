@@ -2,8 +2,9 @@ package com.go.teacup.intellij.lang.tea.psi.resolve;
 
 import com.go.teacup.intellij.lang.tea.psi.TeaElement;
 import com.go.teacup.intellij.lang.tea.psi.TeaNamedElement;
+import com.intellij.openapi.util.Key;
 import com.intellij.psi.PsiElement;
-import com.intellij.psi.PsiSubstitutor;
+import com.intellij.psi.ResolveState;
 import com.intellij.psi.scope.PsiScopeProcessor;
 
 /**
@@ -22,7 +23,7 @@ public class ResolveProcessor implements PsiScopeProcessor {
         return result;
     }
 
-    public boolean execute(PsiElement element, PsiSubstitutor substitutor) {
+    public boolean execute(PsiElement element, ResolveState resolveState) {
         if (element instanceof TeaNamedElement) {
             if (name.equals(((TeaNamedElement) element).getName())) {
                 result = (TeaElement) element;
@@ -31,6 +32,10 @@ public class ResolveProcessor implements PsiScopeProcessor {
         }
 
         return true;
+    }
+
+    public <T> T getHint(Key<T> hintKey) {
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
     }
 
     public <T> T getHint(Class<T> hintClass) {

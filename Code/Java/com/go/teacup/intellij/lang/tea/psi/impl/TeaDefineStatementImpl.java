@@ -1,15 +1,15 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
+import com.go.teacup.intellij.lang.tea.TeaElementTypes;
 import com.go.teacup.intellij.lang.tea.psi.TeaDefineStatement;
+import com.go.teacup.intellij.lang.tea.psi.TeaExpression;
 import com.go.teacup.intellij.lang.tea.psi.TeaType;
 import com.go.teacup.intellij.lang.tea.psi.TeaVariable;
-import com.go.teacup.intellij.lang.tea.psi.TeaExpression;
-import com.go.teacup.intellij.lang.tea.TeaElementTypes;
-import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
 import com.intellij.lang.ASTNode;
-import com.intellij.psi.scope.PsiScopeProcessor;
-import com.intellij.psi.PsiSubstitutor;
 import com.intellij.psi.PsiElement;
+import com.intellij.psi.ResolveState;
+import com.intellij.psi.scope.PsiScopeProcessor;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * User: jacksbrr
@@ -42,10 +42,11 @@ public class TeaDefineStatementImpl extends TeaStatementImpl implements TeaDefin
       return null;
     }
 
-    public boolean processDeclarations(PsiScopeProcessor processor, PsiSubstitutor substitutor, PsiElement lastParent, PsiElement place) {
+    @Override
+    public boolean processDeclarations(@NotNull PsiScopeProcessor processor, @NotNull ResolveState resolveState, PsiElement lastParent, @NotNull PsiElement place) {
 //        if (lastParent != null) {
           final TeaVariable var = getVariable();
-          if (var != null) return processor.execute(var, substitutor);
+          if (var != null) return processor.execute(var, resolveState);
 //          else {
 //            if (!processor.execute(getVariableExpression(), null)) return false;
 //          }

@@ -1,16 +1,17 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
+import com.go.teacup.intellij.lang.tea.TeaSupportLoader;
+import com.go.teacup.intellij.lang.tea.psi.*;
+import com.go.teacup.intellij.lang.tea.psi.util.TeaUtils;
+import com.intellij.lang.ASTNode;
+import com.intellij.lang.LanguageParserDefinitions;
+import com.intellij.lang.ParserDefinition;
+import com.intellij.openapi.project.Project;
 import com.intellij.psi.*;
 import com.intellij.psi.tree.TokenSet;
 import com.intellij.util.IncorrectOperationException;
-import com.intellij.lang.ASTNode;
-import com.intellij.lang.ParserDefinition;
-import com.intellij.openapi.project.Project;
-import com.go.teacup.intellij.lang.tea.psi.*;
-import com.go.teacup.intellij.lang.tea.psi.util.TeaUtils;
-import com.go.teacup.intellij.lang.tea.TeaSupportLoader;
-import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.NonNls;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * User: JACKSBRR
@@ -22,8 +23,12 @@ public class TeaChangeUtil {
 
     private TeaChangeUtil() {}
 
+    public static PsiFileFactory getPsiFileFactory(Project project) {
+        return PsiFileFactory.getInstance(PsiManager.getInstance(project).getProject());
+    }
+
     public static ASTNode createNameIdentifier(Project project, String name) {
-      final PsiFile dummyFile = PsiManager.getInstance(project).getElementFactory().createFileFromText(DUMMY + TeaSupportLoader.TEA.getDefaultExtension(), "<%"+name + "%>");
+      final PsiFile dummyFile = getPsiFileFactory(project).createFileFromText(DUMMY + TeaSupportLoader.TEA.getDefaultExtension(), "<%"+name + "%>");
       final TeaExpressionStatement expressionStatement = (TeaExpressionStatement)dummyFile.getFirstChild().getChildren()[0];
       final TeaReferenceExpressionImpl refExpression = (TeaReferenceExpressionImpl)expressionStatement.getFirstChild();
 
@@ -31,26 +36,26 @@ public class TeaChangeUtil {
     }
 
     public static ASTNode createExpressionFromText(Project project, @NonNls String text) {
-      ParserDefinition def = TeaSupportLoader.TEA.getLanguage().getParserDefinition();
+      ParserDefinition def = LanguageParserDefinitions.INSTANCE.forLanguage(TeaSupportLoader.TEA.getLanguage());
       assert def != null;
-      final PsiFile dummyFile = PsiManager.getInstance(project).getElementFactory().createFileFromText(DUMMY + TeaSupportLoader.TEA.getDefaultExtension(), "<%"+text+"%>");
+      final PsiFile dummyFile = getPsiFileFactory(project).createFileFromText(DUMMY + TeaSupportLoader.TEA.getDefaultExtension(), "<%"+text+"%>");
       final TeaExpressionStatement expressionStatement = (TeaExpressionStatement) dummyFile.getFirstChild().getChildren()[0];
       final TeaExpression expr = (TeaExpression) expressionStatement.getFirstChild();
       return expr.getNode();
     }
 
     public static ASTNode createStatementFromText(Project project, @NonNls String text) {
-      ParserDefinition def = TeaSupportLoader.TEA.getLanguage().getParserDefinition();
+        ParserDefinition def = LanguageParserDefinitions.INSTANCE.forLanguage(TeaSupportLoader.TEA.getLanguage());
       assert def != null;
-      final PsiFile dummyFile = PsiManager.getInstance(project).getElementFactory().createFileFromText(DUMMY + TeaSupportLoader.TEA.getDefaultExtension(), "<%"+text+"%>");
+      final PsiFile dummyFile = getPsiFileFactory(project).createFileFromText(DUMMY + TeaSupportLoader.TEA.getDefaultExtension(), "<%"+text+"%>");
       final TeaSourceElement stmt = (TeaSourceElement) dummyFile.getFirstChild().getChildren()[0];
       return stmt.getNode();
     }
 
     public static ASTNode createTeaTreeFromText(Project project, @NonNls String text) {
-      ParserDefinition def = TeaSupportLoader.TEA.getLanguage().getParserDefinition();
+        ParserDefinition def = LanguageParserDefinitions.INSTANCE.forLanguage(TeaSupportLoader.TEA.getLanguage());
       assert def != null;
-      final PsiFile dummyFile = PsiManager.getInstance(project).getElementFactory().createFileFromText(DUMMY + TeaSupportLoader.TEA.getDefaultExtension(), "<%"+text+"%>");
+      final PsiFile dummyFile = getPsiFileFactory(project).createFileFromText(DUMMY + TeaSupportLoader.TEA.getDefaultExtension(), "<%"+text+"%>");
       final PsiElement element = dummyFile.getFirstChild().getChildren()[0];
       if (element != null) return element.getNode();
       return null;
@@ -104,7 +109,7 @@ public class TeaChangeUtil {
                                                     final ASTNode elementNode,
                                                     final ASTNode parentNode,
                                                     final ASTNode insertionPlaceNode) throws IncorrectOperationException {
-      ParserDefinition parserDef = parentNode.getPsi().getLanguage().getParserDefinition();
+      ParserDefinition parserDef = LanguageParserDefinitions.INSTANCE.forLanguage(parentNode.getPsi().getLanguage());
       final TokenSet comments = parserDef.getCommentTokens();
       final TokenSet whitespaces = parserDef.getWhitespaceTokens();
 
@@ -123,7 +128,7 @@ public class TeaChangeUtil {
           commentString = "\n";
         }
 
-        final ASTNode wsNode = parentNode.getPsi().getManager().getElementFactory().createWhiteSpaceFromText(commentString).getNode();
+        final ASTNode wsNode = PsiParserFacade.SERVICE.getInstance(parentNode.getPsi().getProject()).createWhiteSpaceFromText(commentString).getNode();
         parentNode.addChild(
           wsNode,
           insertionPlaceNode

@@ -1,10 +1,12 @@
-package com.go.teacup.intellij.lang.tea;
+package com.go.teacup.intellij.lang.tea.highlighting;
 
 import com.intellij.openapi.options.colors.ColorSettingsPage;
 import com.intellij.openapi.options.colors.ColorDescriptor;
 import com.intellij.openapi.options.colors.AttributesDescriptor;
 import com.intellij.openapi.editor.colors.TextAttributesKey;
 import com.intellij.openapi.fileTypes.SyntaxHighlighter;
+import com.go.teacup.intellij.lang.tea.TeaBundle;
+import com.go.teacup.intellij.lang.tea.TeaSupportLoader;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
@@ -67,7 +69,7 @@ public class TeaColorsAndFontsPage implements ColorSettingsPage {
 
     @NotNull
     public SyntaxHighlighter getHighlighter() {
-      return TeaSupportLoader.TEA.getHighlighter(null, null);
+      return SyntaxHighlighter.PROVIDER.create(TeaSupportLoader.TEA, null, null);
     }
 
     @NotNull

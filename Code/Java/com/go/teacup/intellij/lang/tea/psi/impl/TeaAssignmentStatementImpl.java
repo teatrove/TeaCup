@@ -1,13 +1,16 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
-import com.go.teacup.intellij.lang.tea.psi.*;
-import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
 import com.go.teacup.intellij.lang.tea.TeaElementTypes;
+import com.go.teacup.intellij.lang.tea.psi.TeaAssignmentStatement;
+import com.go.teacup.intellij.lang.tea.psi.TeaType;
+import com.go.teacup.intellij.lang.tea.psi.TeaVariable;
+import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
 import com.intellij.lang.ASTNode;
-import com.intellij.psi.PsiElementVisitor;
-import com.intellij.psi.PsiSubstitutor;
 import com.intellij.psi.PsiElement;
+import com.intellij.psi.PsiElementVisitor;
+import com.intellij.psi.ResolveState;
 import com.intellij.psi.scope.PsiScopeProcessor;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * User: jacksbrr
@@ -18,7 +21,7 @@ public class TeaAssignmentStatementImpl extends TeaStatementImpl implements TeaA
       super(node);
     }
 
-    public void accept(PsiElementVisitor visitor) {
+    public void accept(@NotNull PsiElementVisitor visitor) {
       if (visitor instanceof TeaElementVisitor) {
         ((TeaElementVisitor)visitor).visitTeaAssignmentStatement(this);
       }
@@ -37,10 +40,11 @@ public class TeaAssignmentStatementImpl extends TeaStatementImpl implements TeaA
         return childNode == null ? null : (TeaVariable)childNode.getPsi();
     }
 
-    public boolean processDeclarations(PsiScopeProcessor processor, PsiSubstitutor substitutor, PsiElement lastParent, PsiElement place) {
+    @Override
+    public boolean processDeclarations(@NotNull PsiScopeProcessor processor, @NotNull ResolveState resolveState, PsiElement lastParent, @NotNull PsiElement place) {
 //        if (lastParent != null) {
           final TeaVariable var = getVariable();
-          if (var != null) return processor.execute(var, substitutor);
+          if (var != null) return processor.execute(var, resolveState);
 //          else {
 //            if (!processor.execute(getVariableExpression(), null)) return false;
 //          }
