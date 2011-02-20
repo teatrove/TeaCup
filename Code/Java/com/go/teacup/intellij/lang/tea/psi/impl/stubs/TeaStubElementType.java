@@ -1,6 +1,6 @@
 package com.go.teacup.intellij.lang.tea.psi.impl.stubs;
 
-import com.go.teacup.intellij.lang.tea.TeaSupportLoader;
+import com.go.teacup.intellij.lang.tea.TeaFileTypeLoader;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.stubs.*;
 import org.jetbrains.annotations.NonNls;
@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
  */
 public abstract class TeaStubElementType<StubT extends StubElement, PsiT extends PsiElement> extends IStubElementType<StubT, PsiT> {
     protected TeaStubElementType(@NotNull @NonNls final String debugName) {
-        super(debugName, TeaSupportLoader.TEA.getLanguage());
+        super(debugName, TeaFileTypeLoader.TEA.getLanguage());
     }
 
     public String getExternalId() {

@@ -5,7 +5,6 @@ import com.intellij.lang.cacheBuilder.WordsScanner;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiNamedElement;
 import com.go.teacup.intellij.lang.tea.psi.*;
-import com.go.teacup.intellij.lang.tea.TeaWordsScanner;
 import com.go.teacup.intellij.lang.tea.TeaBundle;
 import com.go.teacup.intellij.lang.tea.index.TeaNamedElementProxy;
 import org.jetbrains.annotations.Nullable;

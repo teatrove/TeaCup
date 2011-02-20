@@ -1,10 +1,10 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
-import com.go.teacup.intellij.lang.tea.psi.TeaCallExpression;
+import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
 import com.go.teacup.intellij.lang.tea.psi.TeaArgumentList;
+import com.go.teacup.intellij.lang.tea.psi.TeaCallExpression;
 import com.go.teacup.intellij.lang.tea.psi.TeaExpression;
 import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
-import com.go.teacup.intellij.lang.tea.TeaElementTypes;
 import com.intellij.lang.ASTNode;
 import com.intellij.psi.PsiElementVisitor;
 import org.jetbrains.annotations.NotNull;

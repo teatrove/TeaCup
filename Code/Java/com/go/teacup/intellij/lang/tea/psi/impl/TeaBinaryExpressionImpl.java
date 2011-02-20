@@ -1,15 +1,15 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
+import com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes;
+import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
 import com.go.teacup.intellij.lang.tea.psi.TeaBinaryExpression;
 import com.go.teacup.intellij.lang.tea.psi.TeaExpression;
-import com.go.teacup.intellij.lang.tea.TeaElementTypes;
-import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
 import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
-import com.intellij.openapi.diagnostic.Logger;
-import com.intellij.psi.tree.TokenSet;
-import com.intellij.psi.tree.IElementType;
-import com.intellij.psi.PsiElementVisitor;
 import com.intellij.lang.ASTNode;
+import com.intellij.openapi.diagnostic.Logger;
+import com.intellij.psi.PsiElementVisitor;
+import com.intellij.psi.tree.IElementType;
+import com.intellij.psi.tree.TokenSet;
 
 /**
  * User: jacksbrr

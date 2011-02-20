@@ -1,6 +1,6 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
-import com.go.teacup.intellij.lang.tea.TeaElementTypes;
+import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
 import com.go.teacup.intellij.lang.tea.psi.TeaBlockStatement;
 import com.go.teacup.intellij.lang.tea.psi.TeaTemplateCallExpression;
 import com.intellij.lang.ASTNode;

@@ -1,7 +1,7 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
+import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
 import com.go.teacup.intellij.lang.tea.psi.TeaStatement;
-import com.go.teacup.intellij.lang.tea.TeaElementTypes;
 import com.intellij.lang.ASTNode;
 import com.intellij.util.IncorrectOperationException;
 

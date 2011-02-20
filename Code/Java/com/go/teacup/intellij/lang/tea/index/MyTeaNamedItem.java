@@ -1,6 +1,6 @@
 package com.go.teacup.intellij.lang.tea.index;
 
-import com.go.teacup.intellij.lang.tea.TeaSupportLoader;
+import com.go.teacup.intellij.lang.tea.TeaFileTypeLoader;
 import com.intellij.extapi.psi.PsiElementBase;
 import com.intellij.lang.ASTNode;
 import com.intellij.lang.Language;
@@ -89,7 +89,7 @@ public class MyTeaNamedItem extends PsiElementBase implements TeaNamedElementPro
 
     @NotNull
     public Language getLanguage() {
-      return TeaSupportLoader.TEA.getLanguage();
+      return TeaFileTypeLoader.TEA.getLanguage();
     }
 
     @NotNull

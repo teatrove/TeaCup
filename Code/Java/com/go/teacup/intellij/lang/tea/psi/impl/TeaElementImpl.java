@@ -4,7 +4,7 @@ import com.intellij.extapi.psi.ASTWrapperPsiElement;
 import com.intellij.lang.ASTNode;
 import com.intellij.lang.Language;
 import com.go.teacup.intellij.lang.tea.psi.TeaElement;
-import com.go.teacup.intellij.lang.tea.TeaSupportLoader;
+import com.go.teacup.intellij.lang.tea.TeaFileTypeLoader;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 
@@ -23,7 +23,7 @@ public class TeaElementImpl extends ASTWrapperPsiElement implements TeaElement {
 
     @NotNull
     public Language getLanguage() {
-        return TeaSupportLoader.TEA.getLanguage();
+        return TeaFileTypeLoader.TEA.getLanguage();
     }
     
 }

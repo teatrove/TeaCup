@@ -1,9 +1,9 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
+import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
+import com.go.teacup.intellij.lang.tea.psi.TeaExpression;
 import com.go.teacup.intellij.lang.tea.psi.TeaIfStatement;
 import com.go.teacup.intellij.lang.tea.psi.TeaStatement;
-import com.go.teacup.intellij.lang.tea.psi.TeaExpression;
-import com.go.teacup.intellij.lang.tea.TeaElementTypes;
 import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
 import com.intellij.lang.ASTNode;
 import com.intellij.psi.PsiElementVisitor;

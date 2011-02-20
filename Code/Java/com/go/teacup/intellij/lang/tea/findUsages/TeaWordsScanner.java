@@ -1,5 +1,7 @@
-package com.go.teacup.intellij.lang.tea;
+package com.go.teacup.intellij.lang.tea.findUsages;
 
+import com.go.teacup.intellij.lang.tea.lexer.TeaLexer;
+import com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes;
 import com.intellij.lang.cacheBuilder.DefaultWordsScanner;
 import com.intellij.psi.tree.TokenSet;
 

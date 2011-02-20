@@ -1,9 +1,9 @@
 package com.go.teacup.intellij.lang.tea.psi.resolve;
 
-import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
 import com.go.teacup.intellij.lang.tea.index.TeaNamedElementProxy;
 import com.go.teacup.intellij.lang.tea.index.TeaNamespace;
 import com.go.teacup.intellij.lang.tea.index.TeaTypeEvaluateManager;
+import com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes;
 import com.go.teacup.intellij.lang.tea.psi.*;
 import com.go.teacup.intellij.lang.tea.psi.util.TeaLookupUtil;
 import com.intellij.openapi.project.Project;

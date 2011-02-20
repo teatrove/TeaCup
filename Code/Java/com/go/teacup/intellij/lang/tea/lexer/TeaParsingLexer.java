@@ -1,4 +1,4 @@
-package com.go.teacup.intellij.lang.tea;
+package com.go.teacup.intellij.lang.tea.lexer;
 
 import com.intellij.lexer.FlexAdapter;
 import com.intellij.psi.tree.IElementType;

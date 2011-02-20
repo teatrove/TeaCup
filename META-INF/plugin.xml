@@ -1,13 +1,22 @@
-<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.intellij.net/plugin.dtd">
 <idea-plugin version="2" use-idea-classloader="true">
     <name>TeaCup</name>
     <id>tea</id>
     <description>Language Support for the scripting language Tea.</description>
-    <version>0.4</version>
+    <version>0.5</version>
     <category>Languages/Tea</category>
     <vendor email="Brian.R.Jackson@disney.com" url="http://www.disney.com">The Walt Disney Company</vendor>
     <change-notes>
     <![CDATA[
+        0.5
+        <ul>
+        <li>Rewrote for IDEA 10.0</li>
+        </ul>
+        <br>
+        Known-issues:
+        <ul>
+        <li>Adding new lines in plain-text blocks</li>
+        </ul>
+
         0.4
         <ul>
         <li>Rewrote for IDEA 8.1</li>
@@ -48,17 +57,18 @@
         </ul>
     ]]>
     </change-notes>
-    <idea-version since-build="3000"/>
+    <idea-version since-build="103.72"/>
     <extensions defaultExtensionNs="com.intellij">
         <errorHandler implementation="com.intellij.diagnostic.ITNReporter"/>
         <colorSettingsPage implementation="com.go.teacup.intellij.lang.tea.highlighting.TeaColorsAndFontsPage"/>
         <!--<gotoSymbolContributor implementation="com.intellij.lang.javascript.index.JavaScriptSymbolContributor"/>-->
         <!--<gotoClassContributor implementation="com.intellij.lang.javascript.index.JavaScriptClassContributor"/>-->
 
-        <fileTypeFactory implementation="com.go.teacup.intellij.lang.tea.TeaSupportLoader"/>
-        <syntaxHighlighter key="Tea" factoryClass="com.go.teacup.intellij.lang.tea.highlighting.TeaSyntaxHighlighterProvider"/>
+        <fileTypeFactory implementation="com.go.teacup.intellij.lang.tea.TeaFileTypeLoader"/>
+        <!--<syntaxHighlighter key="Tea" factoryClass="com.go.teacup.intellij.lang.tea.highlighting.TeaSyntaxHighlighterProvider"/>-->
+        <syntaxHighlighter key="Tea" implementationClass="com.go.teacup.intellij.lang.tea.highlighting.TeaHighlighter"/>
 
-        <lang.substitutor language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.psi.impl.TeaLanguageSubstitutor"/>
+        <!--<lang.substitutor language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.psi.impl.TeaLanguageSubstitutor"/>-->
 
         <lang.parserDefinition language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.TeaParserDefinition"/>
 
@@ -68,6 +78,7 @@
         <!--<lang.formatter language="JavaScript" implementationClass="com.intellij.lang.javascript.formatter.JavascriptFormattingModelBuilder"/>-->
         <!--<lang.documentationProvider language="JavaScript" implementationClass="com.intellij.javascript.documentation.JSDocumentationProvider"/>-->
 
+        <lang.namesValidator language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.refactoring.TeaNamesValidator"/>
         <!--<lang.namesValidator language="GWT JavaScript" implementationClass="com.intellij.lang.javascript.refactoring.GwtNamesValidator"/>-->
         <!--<lang.namesValidator language="JavaScript Object Notation" implementationClass="com.intellij.lang.javascript.refactoring.JSONNamesValidator"/>-->
         <!--<lang.namesValidator language="ECMA Script Level 4" implementationClass="com.intellij.lang.javascript.refactoring.ECMAL4NamesValidator"/>-->
@@ -133,7 +144,7 @@
     </extensions>
     <!--<application-components>-->
         <!--<component>-->
-            <!--<implementation-class>com.go.teacup.intellij.lang.tea.TeaSupportLoader</implementation-class>-->
+            <!--<implementation-class>com.go.teacup.intellij.lang.tea.TeaFileTypeLoaderr</implementation-class>-->
         <!--</component>-->
     <!--</application-components>-->
     <project-components>

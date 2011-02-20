@@ -1,18 +1,16 @@
 package com.go.teacup.intellij.lang.tea;
 
 import com.go.teacup.intellij.lang.tea.debugger.TeaPositionManager;
-import com.go.teacup.intellij.lang.tea.psi.TeaPlainTextInjector;
+import com.intellij.debugger.DebuggerManager;
 import com.intellij.debugger.engine.DebugProcess;
 import com.intellij.debugger.engine.DebugProcessAdapter;
 import com.intellij.debugger.engine.DebugProcessListener;
-import com.intellij.debugger.DebuggerManager;
 import com.intellij.debugger.impl.DebuggerManagerImpl;
 import com.intellij.debugger.impl.DebuggerManagerListener;
 import com.intellij.debugger.impl.DebuggerSession;
 import com.intellij.openapi.components.ProjectComponent;
 import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.project.Project;
-import com.intellij.psi.PsiManager;
 import org.jetbrains.annotations.NonNls;
 import org.jetbrains.annotations.NotNull;
 
@@ -25,11 +23,11 @@ public class TeaProjectSupportLoader implements ProjectComponent {
 
     private final Project project;
     private final DebugProcessListener debugProcessListener;
-    private TeaPlainTextInjector injector;
+//    private TeaPlainTextInjector injector;
 
     public TeaProjectSupportLoader(Project project) {
         this.project = project;
-        this.injector = new TeaPlainTextInjector(project);
+//        this.injector = new TeaPlainTextInjector(project);
         debugProcessListener = new DebugProcessAdapter() {
             public void processAttached(DebugProcess debugProcess) {
                 debugProcess.appendPositionManager(new TeaPositionManager(TeaProjectSupportLoader.this.project, debugProcess));
@@ -76,11 +74,11 @@ public class TeaProjectSupportLoader implements ProjectComponent {
 //        );
 
 //        LOG.warn("Injecting language");
-        PsiManager.getInstance(project).registerLanguageInjector(injector);
+//        PsiManager.getInstance(project).registerLanguageInjector(injector);
     }
 
     public void projectClosed() {
-        PsiManager.getInstance(project).unregisterLanguageInjector(injector);
+//        PsiManager.getInstance(project).unregisterLanguageInjector(injector);
     }
 
     @NonNls

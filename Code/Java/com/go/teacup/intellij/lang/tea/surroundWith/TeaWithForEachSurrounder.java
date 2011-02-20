@@ -1,8 +1,8 @@
 package com.go.teacup.intellij.lang.tea.surroundWith;
 
 import com.go.teacup.intellij.lang.tea.TeaBundle;
-import com.go.teacup.intellij.lang.tea.TeaElementTypes;
-import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
+import com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes;
+import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
 import com.go.teacup.intellij.lang.tea.psi.TeaForEachStatement;
 import com.intellij.lang.ASTNode;
 import com.intellij.openapi.util.TextRange;

@@ -1,8 +1,10 @@
-package com.go.teacup.intellij.lang.tea;
+package com.go.teacup.intellij.lang.tea.refactoring;
 
+import com.go.teacup.intellij.lang.tea.lexer.TeaLexer;
+import com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes;
 import com.intellij.lang.refactoring.NamesValidator;
-import com.intellij.openapi.project.Project;
 import com.intellij.lexer.Lexer;
+import com.intellij.openapi.project.Project;
 
 /**
  * User: JACKSBRR

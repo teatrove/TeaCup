@@ -4,7 +4,7 @@ import com.intellij.psi.LanguageSubstitutor;
 import com.intellij.lang.Language;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.openapi.project.Project;
-import com.go.teacup.intellij.lang.tea.TeaSupportLoader;
+import com.go.teacup.intellij.lang.tea.TeaFileTypeLoader;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -19,13 +19,13 @@ import org.jetbrains.annotations.NotNull;
  * </ul>
  * </p>
  * <p/>
- * <p>Copyright ©2009 ESPN.com and Disney Interactive Media Group.  All rights reserved.</p>
+ * <p>Copyright ï¿½2009 ESPN.com and Disney Interactive Media Group.  All rights reserved.</p>
  *
  * @author <a href="mailto:Brian.R.Jackson@espn3.com">Brian R. Jackson</a>
  * @version $Change$
  */
 public class TeaLanguageSubstitutor extends LanguageSubstitutor {
     public Language getLanguage(@NotNull VirtualFile file, @NotNull Project project) {
-        return TeaSupportLoader.TEA.getLanguage();
+        return TeaFileTypeLoader.TEA.getLanguage();
     }
 }

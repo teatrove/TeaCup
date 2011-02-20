@@ -1,6 +1,6 @@
 package com.go.teacup.intellij.lang.tea.debugger;
 
-import com.go.teacup.intellij.lang.tea.TeaSupportLoader;
+import com.go.teacup.intellij.lang.tea.TeaFileTypeLoader;
 import com.intellij.debugger.NoDataException;
 import com.intellij.debugger.PositionManager;
 import com.intellij.debugger.SourcePosition;
@@ -92,7 +92,7 @@ public class TeaPositionManager implements PositionManager {
 
     public List<com.sun.jdi.ReferenceType> getAllClasses(SourcePosition sourcePosition) throws NoDataException {
         com.intellij.openapi.fileTypes.FileType fileType = sourcePosition.getFile().getFileType();
-        if(fileType != TeaSupportLoader.TEA) {
+        if(fileType != TeaFileTypeLoader.TEA) {
                 throw new NoDataException();
         }
         final List<ReferenceType> result = new ArrayList<ReferenceType>();
@@ -109,7 +109,7 @@ public class TeaPositionManager implements PositionManager {
 
     public List<com.sun.jdi.Location> locationsOfLine(com.sun.jdi.ReferenceType referenceType, SourcePosition sourcePosition) throws NoDataException {
         com.intellij.openapi.fileTypes.FileType fileType = sourcePosition.getFile().getFileType();
-        if(fileType != TeaSupportLoader.TEA) {
+        if(fileType != TeaFileTypeLoader.TEA) {
                 throw new NoDataException();
         }
         String relativePath = getRelativePathFromFQDN(referenceType.name());
@@ -139,7 +139,7 @@ public class TeaPositionManager implements PositionManager {
 
     public com.sun.jdi.request.ClassPrepareRequest createPrepareRequest(final ClassPrepareRequestor classPrepareRequestor, final SourcePosition sourcePosition) throws NoDataException {
         com.intellij.openapi.fileTypes.FileType fileType = sourcePosition.getFile().getFileType();
-        if(fileType != TeaSupportLoader.TEA) {
+        if(fileType != TeaFileTypeLoader.TEA) {
                 throw new NoDataException();
         }
         final ClassPrepareRequest request = debugProcess.getRequestsManager().createClassPrepareRequest(

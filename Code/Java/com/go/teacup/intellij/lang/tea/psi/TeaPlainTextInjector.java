@@ -1,6 +1,6 @@
 package com.go.teacup.intellij.lang.tea.psi;
 
-import com.go.teacup.intellij.lang.tea.TeaElementTypes;
+import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
 import com.intellij.lang.Language;
 import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.openapi.fileTypes.FileType;

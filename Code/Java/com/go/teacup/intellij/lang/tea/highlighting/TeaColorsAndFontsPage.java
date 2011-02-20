@@ -6,7 +6,7 @@ import com.intellij.openapi.options.colors.AttributesDescriptor;
 import com.intellij.openapi.editor.colors.TextAttributesKey;
 import com.intellij.openapi.fileTypes.SyntaxHighlighter;
 import com.go.teacup.intellij.lang.tea.TeaBundle;
-import com.go.teacup.intellij.lang.tea.TeaSupportLoader;
+import com.go.teacup.intellij.lang.tea.TeaFileTypeLoader;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
@@ -54,7 +54,7 @@ public class TeaColorsAndFontsPage implements ColorSettingsPage {
     }
 
     public Icon getIcon() {
-      return TeaSupportLoader.TEA.getIcon();
+      return TeaFileTypeLoader.TEA.getIcon();
     }
 
     @NotNull
@@ -69,7 +69,7 @@ public class TeaColorsAndFontsPage implements ColorSettingsPage {
 
     @NotNull
     public SyntaxHighlighter getHighlighter() {
-      return SyntaxHighlighter.PROVIDER.create(TeaSupportLoader.TEA, null, null);
+      return SyntaxHighlighter.PROVIDER.create(TeaFileTypeLoader.TEA, null, null);
     }
 
     @NotNull

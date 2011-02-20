@@ -1,7 +1,7 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
-import com.go.teacup.intellij.lang.tea.TeaElementTypes;
-import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
+import com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes;
+import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
 import com.go.teacup.intellij.lang.tea.psi.TeaExpression;
 import com.go.teacup.intellij.lang.tea.psi.TeaForEachStatement;
 import com.go.teacup.intellij.lang.tea.psi.TeaStatement;

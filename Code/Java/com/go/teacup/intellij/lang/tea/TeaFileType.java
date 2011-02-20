@@ -1,5 +1,6 @@
 package com.go.teacup.intellij.lang.tea;
 
+import com.intellij.lang.Language;
 import com.intellij.openapi.fileTypes.LanguageFileType;
 import com.intellij.openapi.util.IconLoader;
 import org.jetbrains.annotations.NonNls;
@@ -14,8 +15,11 @@ import javax.swing.*;
  */
 public class TeaFileType extends LanguageFileType {
 
+    public static final TeaFileType TEA_FILE_TYPE = new TeaFileType();
+    public static final Language TEA_LANGUAGE = TEA_FILE_TYPE.getLanguage();
+    @NonNls public static final String DEFAULT_EXTENSION = "tea";
 
-    public TeaFileType() {
+    private TeaFileType() {
         super(new TeaLanguage());
     }
 
@@ -26,14 +30,15 @@ public class TeaFileType extends LanguageFileType {
     }
 
     @NotNull
+    @NonNls
     public String getDescription() {
-        return getLanguage().getID();
+        return "Tea Files";
     }
 
     @NotNull
     @NonNls
     public String getDefaultExtension() {
-        return "tea";
+        return DEFAULT_EXTENSION;
     }
 
     @Nullable
@@ -45,5 +50,9 @@ public class TeaFileType extends LanguageFileType {
     public boolean isJVMDebuggingSupported() {
         return true;
     }
-    
+
+//    @Override
+//    public EditorHighlighter getEditorHighlighter(@Nullable Project project, @Nullable VirtualFile virtualFile, @NotNull EditorColorsScheme colors) {
+//        return new TeaEditorHighlighter(colors, project, virtualFile);
+//    }
 }

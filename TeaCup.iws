@@ -37,47 +37,78 @@
     <option name="USE_USER_FILTER" value="false" />
     <option name="USER" value="" />
   </component>
-  <component name="ChangeListManager" verified="true">
+  <component name="ChangeListManager">
     <list default="true" id="af8d5cbd-51a7-4c3f-9f83-1e72ce7fc50a" name="Precompiled templates" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaChangeUtil.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaChangeUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaDefinitionExpressionImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaDefinitionExpressionImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaElementTypes.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaElementTypes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaElementType.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/stubs/TeaStubElementType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaWordsScanner.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaWordsScanner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaParsingLexer.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaParsingLexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaTemplateImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaTemplateImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaHighlighter.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/highlighting/TeaHighlighter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaCommenter.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaCommenter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/validation/TeaAnnotatingVisitor.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/validation/TeaAnnotatingVisitor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeaCup.iml" afterPath="$PROJECT_DIR$/TeaCup.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaPlainTextImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaPlainTextImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaAssignmentStatementImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaAssignmentStatementImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/VariantsProcessor.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/VariantsProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/structureView/TeaStructureViewElement.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/structureView/TeaStructureViewElement.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaForEachStatementImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaForEachStatementImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeaCup.iws" afterPath="$PROJECT_DIR$/TeaCup.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/highlighting/TeaSyntaxHighlighterProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaDefineStatementImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaDefineStatementImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaBraceMatcher.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/highlighting/TeaBraceMatcher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaPlainLiteralTextEscaper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaParserDefinition.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaParserDefinition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/source/TeaFileElementType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/TeaIndex.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/TeaIndex.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaNamesValidator.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaNamesValidator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/validation/TeaElementVisitor.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/validation/TeaElementVisitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaLanguageSubstitutor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/TeaResolveUtil.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/TeaResolveUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaColorsAndFontsPage.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/highlighting/TeaColorsAndFontsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaFile.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaSupportLoader.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaSupportLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeaCup.ipr" afterPath="$PROJECT_DIR$/TeaCup.ipr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/lexer/Tea.flex" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/lexer/TeaElementType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/lexer/TeaTokenTypes.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaFileBase.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaFileBaseImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaFileImpl.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/Tea.flex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaTokenTypes.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/source/TeaFileElementType.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaElementTypes.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/TeaElementTypes.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaLexer.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/lexer/TeaLexer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaNamesValidator.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/refactoring/TeaNamesValidator.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaParsingLexer.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/lexer/TeaParsingLexer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaSupportLoader.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaFileTypeLoader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaWordsScanner.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/findUsages/TeaWordsScanner.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/_TeaLexer.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/lexer/_TeaLexer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parsing/ExpressionParsing.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/parsing/ExpressionParsing.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parsing/ParsingUtil.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/parsing/ParsingUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parsing/StatementParsing.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/parsing/StatementParsing.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parsing/TeaParser.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/TeaParser.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parsing/TemplateParsing.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/parsing/TemplateParsing.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaFileType.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaFileType.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaLanguage.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaLanguage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/_TeaLexer.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/_TeaLexer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/ResolveProcessor.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/ResolveProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaTokenTypes.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaTokenTypes.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaParserDefinition.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaParserDefinition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaProjectSupportLoader.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaProjectSupportLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/debugger/TeaPositionManager.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/debugger/TeaPositionManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/findUsages/TeaFindUsagesProvider.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/findUsages/TeaFindUsagesProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/folding/TeaFoldingBuilder.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/folding/TeaFoldingBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/formatter/TeaSpacingProcessor.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/formatter/TeaSpacingProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/formatter/blocks/SubBlockVisitor.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/formatter/blocks/SubBlockVisitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/formatter/blocks/TeaBlock.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/formatter/blocks/TeaBlock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/highlighting/TeaBraceMatcher.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/highlighting/TeaBraceMatcher.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/highlighting/TeaColorsAndFontsPage.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/highlighting/TeaColorsAndFontsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/highlighting/TeaHighlighter.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/highlighting/TeaHighlighter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/MyTeaNamedItem.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/MyTeaNamedItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/TeaIndex.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/TeaIndex.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaFile.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaPlainTextInjector.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaPlainTextInjector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaArgumentListImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaArgumentListImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaArrayLiteralExpressionImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaArrayLiteralExpressionImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaAssignmentStatementImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaAssignmentStatementImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaBinaryExpressionImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaBinaryExpressionImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaBlockStatementImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaBlockStatementImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaCallExpressionImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaCallExpressionImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaChangeUtil.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaChangeUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaDefineStatementImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaDefineStatementImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaDefinitionExpressionImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaDefinitionExpressionImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaElementImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaElementImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaExpressionStatementImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaExpressionStatementImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaForEachStatementImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaForEachStatementImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaIfStatementImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaIfStatementImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaIndexedPropertyAccessExpressionImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaIndexedPropertyAccessExpressionImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaLanguageSubstitutor.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaLanguageSubstitutor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaParameterListImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaParameterListImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaParenthesizedExpressionImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaParenthesizedExpressionImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaPrefixExpressionImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaPrefixExpressionImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaReferenceExpressionImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaReferenceExpressionImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaStatementImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaStatementImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaTemplateCallExpressionImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaTemplateCallExpressionImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaTemplateImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaTemplateImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaVariableImpl.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaVariableImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/stubs/TeaStubElementType.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/stubs/TeaStubElementType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/VariantsProcessor.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/VariantsProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/util/TeaUtils.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/util/TeaUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/surroundWith/TeaWithForEachSurrounder.java" afterPath="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/surroundWith/TeaWithForEachSurrounder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/META-INF/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeaCup.ipr" afterPath="$PROJECT_DIR$/TeaCup.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeaCup.iws" afterPath="$PROJECT_DIR$/TeaCup.iws" />
     </list>
-    <list readonly="true" id="6985afa6-986a-4a73-8a3d-0bbb99ed972b" name="Default" comment="" />
+    <list id="6985afa6-986a-4a73-8a3d-0bbb99ed972b" name="Default" comment="" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,6 +124,7 @@
   <component name="CompilerWorkspaceConfiguration">
     <option name="COMPILE_IN_BACKGROUND" value="false" />
   </component>
+  <component name="CoverageDataManager" choice="3" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
     <option name="REVERSE_PATCH" value="false" />
@@ -266,7 +298,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parsing/StatementParsing.java" line="341" class="com.go.teacup.intellij.lang.tea.parsing.StatementParsing" package="com.go.teacup.intellij.lang.tea.parsing">
+      <breakpoint url="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/parsing/StatementParsing.java" line="340" class="com.go.teacup.intellij.lang.tea.parser.parsing.StatementParsing" package="com.go.teacup.intellij.lang.tea.parser.parsing">
         <option name="ENABLED" value="false" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -279,7 +311,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parsing/StatementParsing.java" line="179" class="com.go.teacup.intellij.lang.tea.parsing.StatementParsing" package="com.go.teacup.intellij.lang.tea.parsing">
+      <breakpoint url="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/parsing/StatementParsing.java" line="178" class="com.go.teacup.intellij.lang.tea.parser.parsing.StatementParsing" package="com.go.teacup.intellij.lang.tea.parser.parsing">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -370,7 +402,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parsing/StatementParsing.java" line="22" class="com.go.teacup.intellij.lang.tea.parsing.StatementParsing" package="com.go.teacup.intellij.lang.tea.parsing">
+      <breakpoint url="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/parsing/StatementParsing.java" line="21" class="com.go.teacup.intellij.lang.tea.parser.parsing.StatementParsing" package="com.go.teacup.intellij.lang.tea.parser.parsing">
         <option name="ENABLED" value="false" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -383,7 +415,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parsing/TemplateParsing.java" line="126" class="com.go.teacup.intellij.lang.tea.parsing.TemplateParsing" package="com.go.teacup.intellij.lang.tea.parsing">
+      <breakpoint url="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/parsing/TemplateParsing.java" line="126" class="com.go.teacup.intellij.lang.tea.parser.parsing.TemplateParsing" package="com.go.teacup.intellij.lang.tea.parser.parsing">
         <option name="ENABLED" value="false" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -411,6 +443,19 @@
       </breakpoint>
       <breakpoint url="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaPlainTextInjector.java" line="88" class="com.go.teacup.intellij.lang.tea.psi.TeaPlainTextInjector" package="com.go.teacup.intellij.lang.tea.psi">
         <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaParserDefinition.java" line="162" class="com.go.teacup.intellij.lang.tea.TeaParserDefinition" package="com.go.teacup.intellij.lang.tea">
+        <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
         <option name="SUSPEND_POLICY" value="SuspendAll" />
@@ -474,22 +519,22 @@
     </breakpoint_any>
     <breakpoint_rules />
     <ui_properties>
-      <property name="exception_breakpoints_flattenPackages" value="true" />
-      <property name="line_breakpoints_groupByClasses" value="true" />
-      <property name="exception_breakpoints_groupByMethods" value="false" />
-      <property name="method_breakpoints_viewId" value="TABLE" />
-      <property name="line_breakpoints_viewId" value="TABLE" />
-      <property name="exception_breakpoints_groupByClasses" value="true" />
-      <property name="method_breakpoints_groupByMethods" value="false" />
-      <property name="field_breakpoints_flattenPackages" value="true" />
-      <property name="line_breakpoints_flattenPackages" value="true" />
-      <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="field_breakpoints_groupByClasses" value="true" />
-      <property name="method_breakpoints_flattenPackages" value="true" />
-      <property name="field_breakpoints_viewId" value="TABLE" />
       <property name="line_breakpoints_groupByMethods" value="false" />
-      <property name="method_breakpoints_groupByClasses" value="true" />
+      <property name="line_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_flattenPackages" value="true" />
+      <property name="method_breakpoints_flattenPackages" value="true" />
+      <property name="field_breakpoints_flattenPackages" value="true" />
+      <property name="exception_breakpoints_groupByMethods" value="false" />
+      <property name="line_breakpoints_groupByClasses" value="true" />
       <property name="field_breakpoints_groupByMethods" value="false" />
+      <property name="method_breakpoints_viewId" value="TABLE" />
+      <property name="line_breakpoints_flattenPackages" value="true" />
+      <property name="field_breakpoints_groupByClasses" value="true" />
+      <property name="method_breakpoints_groupByClasses" value="true" />
+      <property name="exception_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
   <component name="FavoritesManager">
@@ -505,58 +550,21 @@
       </PATH>
     </subPane>
   </component>
-  <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TeaTokenTypes.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaTokenTypes.java">
+      <file leaf-file-name="PsiUtilBase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../idea/platform/lang-api/src/com/intellij/psi/util/PsiUtilBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="19" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
+            <state line="61" column="0" selection-start="2323" selection-end="2323" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TeaLanguage.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaLanguage.java">
+      <file leaf-file-name="TeaParserDefinition.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaParserDefinition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="17" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeaFile.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="62" selection-start="722" selection-end="756" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JavaFileElementType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../../../Documents/Projects/community/java/java-impl/src/com/intellij/psi/impl/source/JavaFileElementType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="36" selection-start="1705" selection-end="1705" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StdLanguages.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../../../Documents/Projects/community/java/openapi/src/com/intellij/lang/StdLanguages.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="25" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeaFileElementType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/source/TeaFileElementType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="36" selection-start="2540" selection-end="2540" vertical-scroll-proportion="0.0">
+            <state line="160" column="0" selection-start="6093" selection-end="6093" vertical-scroll-proportion="0.9952494">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -564,37 +572,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PsiJavaFileStub.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../../../Documents/Projects/community/java/java-impl/src/com/intellij/psi/impl/java/stubs/PsiJavaFileStub.java">
+      <file leaf-file-name="LeafPsiElement.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../idea/platform/lang-impl/src/com/intellij/psi/impl/source/tree/LeafPsiElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
+            <state line="83" column="0" selection-start="2773" selection-end="2773" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PsiJavaFileStubImpl.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../../../../../Documents/Projects/community/java/java-impl/src/com/intellij/psi/impl/java/stubs/impl/PsiJavaFileStubImpl.java">
+      <file leaf-file-name="TeaSubstitutionStatementImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaSubstitutionStatementImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="13" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.09009009">
+            <state line="12" column="11" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaLexer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../../../Documents/Projects/community/java/java-impl/src/com/intellij/lexer/JavaLexer.java">
+      <file leaf-file-name="TeaPlainLiteralTextEscaper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaPlainLiteralTextEscaper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="13" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.0">
+            <state line="25" column="13" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TeaLexer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaLexer.java">
+      <file leaf-file-name="TeaPlainTextImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaPlainTextImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="11" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
+            <state line="23" column="21" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TeaElementTypes.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/TeaElementTypes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="42" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TemplateParsing.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/parsing/TemplateParsing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="119" column="49" selection-start="4257" selection-end="4257" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Divider.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../idea/platform/lang-impl/src/com/intellij/codeInsight/daemon/impl/Divider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="22" selection-start="2311" selection-end="2311" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StatementParsing.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/parsing/StatementParsing.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="23" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -607,24 +651,29 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
+    <option name="UPDATE_CHANGES_POLICY" value="STASH" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/highlighting/TeaHighlighter.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaParsingLexer.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaCommenter.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaReferenceExpressionImpl.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaCallExpressionImpl.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaBinaryExpressionImpl.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaBlockStatementImpl.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaArgumentListImpl.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaArrayLiteralExpressionImpl.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaIfStatementImpl.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaIndexedPropertyAccessExpressionImpl.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaExpressionStatementImpl.java" />
         <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaNamesValidator.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/ResolveProcessor.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/VariantsProcessor.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/TeaIndex.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaPlainLiteralTextEscaper.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaPlainTextImpl.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/refactoring/TeaNamesValidator.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaSupportLoader.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaLanguage.java" />
+        <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaProjectSupportLoader.java" />
         <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaParserDefinition.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaFile.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaElementType.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaStubElementType.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/stubs/TeaStubElementType.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/source/TeaFileElementType.java" />
       </list>
     </option>
   </component>
@@ -708,7 +757,7 @@
   </component>
   <component name="PerforceDirect.Settings">
     <option name="passwd" value="dfefdfd9dfdadfc4df9bdf98df99df9e" />
-    <option name="pathToExec" value="$PROJECT_DIR$/../../../../../../bin/p4" />
+    <option name="pathToExec" value="/../bin/p4" />
     <option name="USE_LOGIN" value="true" />
     <option name="LOGIN_SILENTLY" value="true" />
   </component>
@@ -717,7 +766,7 @@
       <profile-state />
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkin" />
@@ -1627,7 +1676,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="PackagesPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -1639,38 +1688,810 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Favorites" />
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IU-103.72 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IU-103.72 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IU-103.72 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IU-103.72 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="psi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IU-103.72 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openapi.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="psi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IU-103.72 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idea.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IU-103.72 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idea.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IU-103.72 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idea.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IU-103.72 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idea.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeInsight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IU-103.72 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idea.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeInsight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="daemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; IDEA IU-103.72 &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idea.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeInsight" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="daemon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="validation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="surroundWith" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="structureView" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="refactoring" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="psi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="psi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parsing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="formatter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="formatter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Code" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="folding" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Favorites" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="intellij" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="psi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.go.teacup.intellij.lang.tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com.go.teacup.intellij.lang.tea" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="psi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="project.structure.last.edited" value="SDKs" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.searchVisible" value="true" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="RunManagerConfig.compileBeforeRunning" value="true" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="last_opened_file_path" value="C:\Documents and Settings\jacksbrr\My Documents" />
-    <property name="recentsLimit" value="5" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="net.stevechaloner.intellijad.config.ApplicationConfigComponent" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="false" />
+    <property name="RunManagerConfig.compileBeforeRunning" value="true" />
+    <property name="options.lastSelected" value="preferences.externalResources" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="C:\Documents and Settings\jacksbrr\My Documents" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PsiViewer.ProjectComponent">
     <option name="HIGHLIGHT" value="false" />
@@ -1684,10 +2505,15 @@
     <key name="IntroduceConstantDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.go.teacup.intellij.lang.tea.psi.impl.source" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.go.teacup.intellij.lang.tea.refactoring" />
+      <recent name="com.go.teacup.intellij.lang.tea.findUsages" />
+      <recent name="com.go.teacup.intellij.lang.tea.lexer" />
+      <recent name="com.go.teacup.intellij.lang.tea.parser" />
       <recent name="com.go.teacup.intellij.lang.tea.psi.impl.stubs" />
-      <recent name="com.go.teacup.intellij.lang.tea.highlighting" />
-      <recent name="com.go.teacup.intellij.lang.tea" />
     </key>
   </component>
   <component name="Regex">
@@ -1702,6 +2528,24 @@
     <option name="showLabels" value="true" />
   </component>
   <component name="RunManager" selected="Plugin.TeaCup">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="TeaCup" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -1714,35 +2558,7 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" break_at_first_line="false" browser="DEFAULT" class_file="" class="" config_file="" directory="" file="" is_config_by_xml="false" is_groups_set="false" method_class="" method_file="" method="" open_page_automatically="false" scope="Class" stop_session_after_first_page="true" web_path="">
-      <option name="excludedGroups">
-        <set />
-      </option>
-      <option name="includedGroups">
-        <set />
-      </option>
-      <option name="mappings">
-        <list />
-      </option>
-      <option name="sessionId" value="" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="FtpUpload" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" adl_options="" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" browser_family="FIREFOX" class_name="" debugger_sdk="Module SDK" html_or_swf_file_path="" launcher_type="OSDefault" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" player_path="/Applications/Flash Player.app/Contents/MacOS/Flash Player" port="0" run_mode="HtmlOrSwfFile" run_trusted="false" scope="Class" socket_policy_port="0" url_to_launch="http://">
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -1752,7 +2568,6 @@
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1784,44 +2599,17 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="TeaCup" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" class_name="" html_or_swf_file_path="" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" port="0" run_mode="HtmlOrSwfFile" scope="Class" socket_policy_port="0" url_to_launch="http://">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
+    <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <envs />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -1831,7 +2619,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -1850,11 +2637,37 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" runner="emma" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <envs />
+      <patterns />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="false" name="TeaCup" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="TeaCup" />
       <option name="VM_PARAMETERS" value="-Xmx768m -XX:PermSize=256m -XX:MaxPermSize=256m" />
       <option name="PROGRAM_PARAMETERS" value="" />
-      <log_file path="$PROJECT_DIR$/../../../../../../Library/Caches/IntelliJIdea90/plugins-sandbox/system/log/idea.log" checked="false" skipped="true" show_all="false" alias="IDEA LOG" />
+      <log_file path="/../Library/Caches/IntelliJIdea90/plugins-sandbox/system/log/idea.log" checked="false" skipped="true" show_all="false" alias="IDEA LOG" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="1494" />
         <option name="TRANSPORT" value="0" />
@@ -1923,19 +2736,20 @@
     <option name="USE_PROJECT_SETTINGS" value="true" />
     <option name="USE_ALTERNATE_LOCATION" value="false" />
   </component>
-  <component name="SvnConfiguration">
+  <component name="SvnConfiguration" maxAnnotateRevisions="500">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
     <option name="LAST_MERGED_REVISION" />
-    <option name="UPDATE_RUN_STATUS" value="false" />
     <option name="MERGE_DRY_RUN" value="false" />
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
     <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
     <option name="IGNORE_SPACES_IN_MERGE" value="false" />
     <option name="DETECT_NESTED_COPIES" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <configuration useDefault="true">$PROJECT_DIR$/../../../../../../.subversion</configuration>
+    <option name="FORCE_UPDATE" value="false" />
+    <configuration useDefault="true">$USER_HOME$/.subversion_IDEA</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
   </component>
@@ -1993,47 +2807,47 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="257" y="29" width="1440" height="807" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1440" height="820" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977018" sideWeight="0.6683217" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32912844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27246585" sideWeight="0.53997195" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4502104" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24857838" sideWeight="0.66490066" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32692307" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44917583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32969216" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32238805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1876348" sideWeight="0.53997195" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4147157" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41346154" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32142857" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32912844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24857838" sideWeight="0.66490066" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977018" sideWeight="0.6683217" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.317757" sideWeight="0.6730769" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32142857" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="File View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1876348" sideWeight="0.53997195" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12926829" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.59977067" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliJad Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4234694" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="BSFConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32238805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="File View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.59977067" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VCS.FileViewConfiguration">
@@ -2053,6 +2867,10 @@
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
+    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
@@ -2127,119 +2945,117 @@
     <option name="myLastEditedConfigurable" value="Default" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../../../../Documents/Projects/community/java/java-impl/src/com/intellij/psi/impl/java/stubs/JavaStubElementTypes.java">
+    <entry file="file://$PROJECT_DIR$/../idea/platform/lang-impl/src/com/intellij/psi/impl/source/tree/injected/InjectedLanguageUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="59" selection-start="820" selection-end="820" vertical-scroll-proportion="0.0">
+        <state line="204" column="0" selection-start="9245" selection-end="9245" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../Documents/Projects/community/java/java-impl/src/com/intellij/psi/impl/java/stubs/JavaStubElementType.java">
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/TeaParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1311" selection-end="1382" vertical-scroll-proportion="0.0">
+        <state line="18" column="32" selection-start="625" selection-end="625" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/stubs/TeaStubElementType.java">
+    <entry file="file://$PROJECT_DIR$/../idea/platform/lang-impl/src/com/intellij/codeInsight/daemon/impl/ProgressableTextEditorHighlightingPass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="659" selection-end="659" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="56" column="0" selection-start="2294" selection-end="2294" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaElementTypes.java">
+    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="98" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0">
+        <state line="159" column="74" selection-start="11042" selection-end="11042" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaProjectSupportLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="5" selection-start="3684" selection-end="3684" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../idea/platform/lang-impl/src/com/intellij/codeInsight/daemon/impl/GeneralHighlightingPass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="183" column="26" selection-start="8700" selection-end="8700" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../idea/platform/lang-impl/src/com/intellij/codeInsight/daemon/impl/Divider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="22" selection-start="2311" selection-end="2311" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../idea/platform/lang-api/src/com/intellij/psi/util/PsiUtilBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="0" selection-start="2323" selection-end="2323" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/parsing/StatementParsing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="23" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/TeaElementTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="42" selection-start="1446" selection-end="1446" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/parsing/TemplateParsing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="49" selection-start="4257" selection-end="4257" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaSubstitutionStatementImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="11" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaPlainLiteralTextEscaper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="13" selection-start="765" selection-end="765" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaPlainTextImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="21" selection-start="851" selection-end="851" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../idea/platform/lang-impl/src/com/intellij/psi/impl/source/tree/LeafPsiElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="0" selection-start="2773" selection-end="2773" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaParserDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="41" selection-start="2078" selection-end="2078" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaFileType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaLanguage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../Documents/Projects/community/java/java-impl/src/com/intellij/psi/impl/source/JavaFileElementType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="36" selection-start="1705" selection-end="1705" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../Documents/Projects/community/java/openapi/src/com/intellij/lang/StdLanguages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="25" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaTokenTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="62" selection-start="722" selection-end="756" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="11" selection-start="223" selection-end="223" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../Documents/Projects/community/java/java-impl/src/com/intellij/lexer/JavaLexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="13" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/source/TeaFileElementType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="36" selection-start="2540" selection-end="2540" vertical-scroll-proportion="0.0">
+        <state line="160" column="0" selection-start="6093" selection-end="6093" vertical-scroll-proportion="0.9952494">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../Documents/Projects/community/java/java-impl/src/com/intellij/psi/impl/java/stubs/PsiJavaFileStub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../../../Documents/Projects/community/java/java-impl/src/com/intellij/psi/impl/java/stubs/impl/PsiJavaFileStubImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="13" selection-start="1013" selection-end="1013" vertical-scroll-proportion="0.09009009">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2289,34 +3105,27 @@
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <UIState>
-          <splitter-proportions>
-            <SplitterProportionsDataImpl>
-              <option name="proportions">
-                <list>
-                  <option value="0.2" />
-                </list>
-              </option>
-            </SplitterProportionsDataImpl>
-          </splitter-proportions>
-          <settings />
-        </UIState>
-      </state>
       <state key="Copyright.UI">
-        <UIState>
+        <settings>
+          <splitter-proportions />
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Google AppEngine 1.2.0</last-edited>
           <splitter-proportions>
-            <SplitterProportionsDataImpl />
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
           </splitter-proportions>
-        </UIState>
+        </settings>
       </state>
       <state key="ScopeChooserConfigurable.UI">
-        <UIState>
-          <splitter-proportions>
-            <SplitterProportionsDataImpl />
-          </splitter-proportions>
-          <settings />
-        </UIState>
+        <settings>
+          <splitter-proportions />
+        </settings>
       </state>
     </states>
   </component>

@@ -1,11 +1,11 @@
-package com.go.teacup.intellij.lang.tea.parsing;
+package com.go.teacup.intellij.lang.tea.parser.parsing;
 
-import com.intellij.lang.PsiBuilder;
-import com.intellij.psi.tree.IElementType;
-import com.intellij.openapi.diagnostic.Logger;
-import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
-import com.go.teacup.intellij.lang.tea.TeaElementTypes;
 import com.go.teacup.intellij.lang.tea.TeaBundle;
+import com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes;
+import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
+import com.intellij.lang.PsiBuilder;
+import com.intellij.openapi.diagnostic.Logger;
+import com.intellij.psi.tree.IElementType;
 
 /**
  * User: JACKSBRR

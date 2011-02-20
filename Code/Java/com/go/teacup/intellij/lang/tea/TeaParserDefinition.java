@@ -1,23 +1,24 @@
 package com.go.teacup.intellij.lang.tea;
 
-import com.intellij.lang.ParserDefinition;
-import com.intellij.lang.PsiParser;
+import com.go.teacup.intellij.lang.tea.lexer.TeaParsingLexer;
+import com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes;
+import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
+import com.go.teacup.intellij.lang.tea.parser.TeaParser;
+import com.go.teacup.intellij.lang.tea.psi.factory.SimplePsiElementFactory;
+import com.go.teacup.intellij.lang.tea.psi.impl.*;
 import com.intellij.lang.ASTNode;
 import com.intellij.lang.LanguageUtil;
+import com.intellij.lang.ParserDefinition;
+import com.intellij.lang.PsiParser;
 import com.intellij.lexer.Lexer;
-import com.intellij.openapi.project.Project;
 import com.intellij.openapi.diagnostic.Logger;
-import com.intellij.psi.tree.IFileElementType;
-import com.intellij.psi.tree.TokenSet;
-import com.intellij.psi.tree.IElementType;
+import com.intellij.openapi.project.Project;
+import com.intellij.psi.FileViewProvider;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiFile;
-import com.intellij.psi.FileViewProvider;
-import com.intellij.extapi.psi.ASTWrapperPsiElement;
-import com.go.teacup.intellij.lang.tea.psi.factory.SimplePsiElementFactory;
-import com.go.teacup.intellij.lang.tea.psi.TeaFile;
-import com.go.teacup.intellij.lang.tea.psi.impl.*;
-import com.go.teacup.intellij.lang.tea.parsing.TeaParser;
+import com.intellij.psi.tree.IElementType;
+import com.intellij.psi.tree.IFileElementType;
+import com.intellij.psi.tree.TokenSet;
 import com.intellij.psi.util.PsiUtil;
 import org.jetbrains.annotations.NotNull;
 
@@ -154,13 +155,16 @@ public class TeaParserDefinition implements ParserDefinition {
         else if (type == TeaElementTypes.SUBSTITUTION_STATEMENT) {
           return new TeaSubstitutionStatementImpl(node);
         }
+//        else if (type == TeaElementTypes.EMBEDDED_SCRIPT) {
+//            return new TeaPlainTextImpl(type, node.getChars());
+//        }
 
         //TODO: create PsiElement instances here!!
         return PsiUtil.NULL_PSI_ELEMENT;
     }
 
     public PsiFile createFile(FileViewProvider viewProvider) {
-        return new TeaFile(viewProvider);
+        return new TeaFileImpl(viewProvider);
     }
 
     public SpaceRequirements spaceExistanceTypeBetweenTokens(ASTNode left, ASTNode right) {

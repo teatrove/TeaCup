@@ -1,10 +1,10 @@
 package com.go.teacup.intellij.lang.tea.highlighting;
 
-import com.intellij.lang.PairedBraceMatcher;
+import com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes;
 import com.intellij.lang.BracePair;
-import com.intellij.psi.tree.IElementType;
+import com.intellij.lang.PairedBraceMatcher;
 import com.intellij.psi.PsiFile;
-import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
+import com.intellij.psi.tree.IElementType;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

@@ -1,12 +1,11 @@
 package com.go.teacup.intellij.lang.tea.folding;
 
+import com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes;
+import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
+import com.intellij.lang.ASTNode;
 import com.intellij.lang.folding.FoldingBuilder;
 import com.intellij.lang.folding.FoldingDescriptor;
-import com.intellij.lang.ASTNode;
-import com.intellij.codeInsight.folding.CodeFoldingSettings;
 import com.intellij.openapi.editor.Document;
-import com.go.teacup.intellij.lang.tea.TeaElementTypes;
-import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
 
 import java.util.ArrayList;
 import java.util.List;

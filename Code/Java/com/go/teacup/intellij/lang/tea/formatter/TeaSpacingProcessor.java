@@ -1,13 +1,13 @@
 package com.go.teacup.intellij.lang.tea.formatter;
 
 import com.go.teacup.intellij.lang.tea.TeaNodeVisitor;
-import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
-import com.go.teacup.intellij.lang.tea.TeaElementTypes;
-import com.intellij.psi.codeStyle.CodeStyleSettings;
-import com.intellij.psi.tree.IElementType;
+import com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes;
+import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
 import com.intellij.formatting.Spacing;
 import com.intellij.lang.ASTNode;
 import com.intellij.openapi.util.TextRange;
+import com.intellij.psi.codeStyle.CodeStyleSettings;
+import com.intellij.psi.tree.IElementType;
 
 /**
  * User: JACKSBRR

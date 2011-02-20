@@ -1,7 +1,7 @@
 package com.go.teacup.intellij.lang.tea.index;
 
 import com.go.teacup.intellij.lang.tea.TeaBundle;
-import com.go.teacup.intellij.lang.tea.TeaSupportLoader;
+import com.go.teacup.intellij.lang.tea.TeaFileTypeLoader;
 import com.go.teacup.intellij.lang.tea.psi.TeaFile;
 import com.go.teacup.intellij.lang.tea.psi.impl.TeaChangeUtil;
 import com.intellij.lang.PsiBuilder;
@@ -102,7 +102,7 @@ public class TeaIndex implements ProjectComponent {
 
             fileIndex.iterateContent(new ContentIterator() {
               public boolean processFile(VirtualFile fileOrDir) {
-                if (myFileTypeManager.getFileTypeByFile(fileOrDir) == TeaSupportLoader.TEA &&
+                if (myFileTypeManager.getFileTypeByFile(fileOrDir) == TeaFileTypeLoader.TEA &&
                     myTeaFiles.get(fileOrDir.getPath()) == null
                    ) {
                   filesToProcess.add(fileOrDir);
@@ -151,7 +151,7 @@ public class TeaIndex implements ProjectComponent {
 
         public void beforeFileDeleted(VirtualFileEvent event) {
           final VirtualFile fileOrDir = event.getFile();
-          if (myFileTypeManager.getFileTypeByFile(fileOrDir) == TeaSupportLoader.TEA) {
+          if (myFileTypeManager.getFileTypeByFile(fileOrDir) == TeaFileTypeLoader.TEA) {
             processFileRemoved( (TeaFile)PsiManager.getInstance(myProject).findFile(fileOrDir) );
           }
         }
@@ -386,7 +386,7 @@ public class TeaIndex implements ProjectComponent {
           return (TeaFile)method.invoke(
             psiFileFactory,
             PREDEFINES_PREFIX + type + ".tea",
-            TeaSupportLoader.TEA,
+            TeaFileTypeLoader.TEA,
             s,
             LocalTimeCounter.currentTime(),
             false,
@@ -396,7 +396,7 @@ public class TeaIndex implements ProjectComponent {
         catch (Exception e) {
           return (TeaFile)psiFileFactory.createFileFromText(
             PREDEFINES_PREFIX + type + ".tea",
-            TeaSupportLoader.TEA,
+            TeaFileTypeLoader.TEA,
             s,
             LocalTimeCounter.currentTime(),
             false
@@ -417,7 +417,7 @@ public class TeaIndex implements ProjectComponent {
     }
 
     private void fileAdded(final VirtualFile fileOrDir) {
-      if (myFileTypeManager.getFileTypeByFile(fileOrDir) == TeaSupportLoader.TEA) {
+      if (myFileTypeManager.getFileTypeByFile(fileOrDir) == TeaFileTypeLoader.TEA) {
         final PsiFile psiFile = PsiManager.getInstance(myProject).findFile(fileOrDir);
         if (psiFile instanceof TeaFile) processFileAdded((TeaFile)psiFile);
       }
@@ -540,7 +540,7 @@ public class TeaIndex implements ProjectComponent {
         }
       }
 
-      if (psiFile.getFileType() != TeaSupportLoader.TEA) {
+      if (psiFile.getFileType() != TeaFileTypeLoader.TEA) {
         TeaIndexEntry ourEntry = psiFile.getUserData(ourEntryKey);
 
         if (ourEntry == null) {

@@ -1,17 +1,19 @@
 package com.go.teacup.intellij.lang.tea.psi.util;
 
-import static com.go.teacup.intellij.lang.tea.TeaElementTypes.*;
-import static com.go.teacup.intellij.lang.tea.TeaTokenTypes.*;
 import com.go.teacup.intellij.lang.tea.psi.*;
-import com.intellij.psi.xml.XmlTag;
-import com.intellij.psi.xml.XmlFile;
-import com.intellij.psi.xml.XmlAttributeValue;
-import com.intellij.psi.xml.XmlTagChild;
-import com.intellij.psi.PsiFile;
 import com.intellij.psi.PsiElement;
+import com.intellij.psi.PsiFile;
+import com.intellij.psi.jsp.JspFile;
 import com.intellij.psi.tree.IElementType;
 import com.intellij.psi.util.PsiTreeUtil;
-import com.intellij.psi.jsp.JspFile;
+import com.intellij.psi.xml.XmlAttributeValue;
+import com.intellij.psi.xml.XmlFile;
+import com.intellij.psi.xml.XmlTag;
+import com.intellij.psi.xml.XmlTagChild;
+
+import static com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes.*;
+import static com.go.teacup.intellij.lang.tea.parser.TeaElementTypes.BINARY_EXPRESSION;
+import static com.go.teacup.intellij.lang.tea.parser.TeaElementTypes.PREFIX_EXPRESSION;
 
 /**
  * User: JACKSBRR

@@ -1,9 +1,9 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
-import com.go.teacup.intellij.lang.tea.TeaElementTypes;
-import com.go.teacup.intellij.lang.tea.TeaTokenTypes;
 import com.go.teacup.intellij.lang.tea.index.TeaIndex;
 import com.go.teacup.intellij.lang.tea.index.TeaSymbolUtil;
+import com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes;
+import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
 import com.go.teacup.intellij.lang.tea.psi.*;
 import com.go.teacup.intellij.lang.tea.psi.resolve.ResolveProcessor;
 import com.go.teacup.intellij.lang.tea.psi.resolve.TeaResolveUtil;
