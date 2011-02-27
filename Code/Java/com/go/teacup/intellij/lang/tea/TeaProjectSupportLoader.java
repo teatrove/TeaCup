@@ -23,11 +23,9 @@ public class TeaProjectSupportLoader implements ProjectComponent {
 
     private final Project project;
     private final DebugProcessListener debugProcessListener;
-//    private TeaPlainTextInjector injector;
 
     public TeaProjectSupportLoader(Project project) {
         this.project = project;
-//        this.injector = new TeaPlainTextInjector(project);
         debugProcessListener = new DebugProcessAdapter() {
             public void processAttached(DebugProcess debugProcess) {
                 debugProcess.appendPositionManager(new TeaPositionManager(TeaProjectSupportLoader.this.project, debugProcess));
@@ -73,12 +71,9 @@ public class TeaProjectSupportLoader implements ProjectComponent {
 //                }
 //        );
 
-//        LOG.warn("Injecting language");
-//        PsiManager.getInstance(project).registerLanguageInjector(injector);
     }
 
     public void projectClosed() {
-//        PsiManager.getInstance(project).unregisterLanguageInjector(injector);
     }
 
     @NonNls
@@ -92,6 +87,5 @@ public class TeaProjectSupportLoader implements ProjectComponent {
     }
 
     public void disposeComponent() {
-//        injector = null;
     }
 }

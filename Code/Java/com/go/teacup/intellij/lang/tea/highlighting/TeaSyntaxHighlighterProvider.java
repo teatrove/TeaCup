@@ -17,7 +17,7 @@ import org.jetbrains.annotations.Nullable;
  * </ul>
  * </p>
  * <p/>
- * <p>Copyright ©2009 ESPN.com and Disney Interactive Media Group.  All rights reserved.</p>
+ * <p>Copyright 2009 ESPN.com and Disney Interactive Media Group.  All rights reserved.</p>
  *
  * @author <a href="mailto:Brian.R.Jackson@espn3.com">Brian R. Jackson</a>
  * @version $Change$

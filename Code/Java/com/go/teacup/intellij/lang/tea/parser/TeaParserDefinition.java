@@ -148,7 +148,7 @@ public class TeaParserDefinition implements ParserDefinition {
           return new TeaTemplateCallExpressionImpl(node);
         }
         else if(type == TeaElementTypes.PLAIN_TEXT) {
-            return new TeaPlainTextImpl(type, node.getChars());
+            return new TeaPlainTextImpl(node);
         }
         else if (type == TeaElementTypes.SUBSTITUTION_STATEMENT) {
           return new TeaSubstitutionStatementImpl(node);
