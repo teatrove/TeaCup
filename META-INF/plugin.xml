@@ -70,7 +70,7 @@
 
         <!--<lang.substitutor language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.psi.impl.TeaLanguageSubstitutor"/>-->
 
-        <lang.parserDefinition language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.TeaParserDefinition"/>
+        <lang.parserDefinition language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.parser.TeaParserDefinition"/>
 
 
         <annotator language="Tea" implementationClass="com.go.teacup.intellij.lang.tea.validation.TeaAnnotatingVisitor"/>

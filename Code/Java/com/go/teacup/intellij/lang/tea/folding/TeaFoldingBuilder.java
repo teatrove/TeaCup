@@ -33,7 +33,7 @@ public class TeaFoldingBuilder implements FoldingBuilder {
       else if (node.getElementType() == TeaTokenTypes.C_STYLE_COMMENT) {
         descriptors.add(new FoldingDescriptor(node, node.getTextRange()));
       }
-//      else if (node.getElementType() == TeaElementTypes.EMBEDDED_SCRIPT) {
+//      else if (node.getElementType() == TeaElementTypes.CODE_REGION) {
 //        descriptors.add(new FoldingDescriptor(node, node.getTextRange()));
 //      }
 
@@ -54,7 +54,7 @@ public class TeaFoldingBuilder implements FoldingBuilder {
       else if (node.getElementType() == TeaElementTypes.BLOCK) {
         return "{...}";
       }
-//      else if (node.getElementType() == TeaElementTypes.EMBEDDED_SCRIPT) {
+//      else if (node.getElementType() == TeaElementTypes.CODE_REGION) {
 //        return "<%...%>";
 //      }
       return null;

@@ -1,9 +1,7 @@
-package com.go.teacup.intellij.lang.tea;
+package com.go.teacup.intellij.lang.tea.parser;
 
 import com.go.teacup.intellij.lang.tea.lexer.TeaParsingLexer;
 import com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes;
-import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
-import com.go.teacup.intellij.lang.tea.parser.TeaParser;
 import com.go.teacup.intellij.lang.tea.psi.factory.SimplePsiElementFactory;
 import com.go.teacup.intellij.lang.tea.psi.impl.*;
 import com.intellij.lang.ASTNode;
@@ -155,9 +153,15 @@ public class TeaParserDefinition implements ParserDefinition {
         else if (type == TeaElementTypes.SUBSTITUTION_STATEMENT) {
           return new TeaSubstitutionStatementImpl(node);
         }
-//        else if (type == TeaElementTypes.EMBEDDED_SCRIPT) {
-//            return new TeaPlainTextImpl(type, node.getChars());
-//        }
+        else if (type == TeaElementTypes.CODE_REGION) {
+            return new TeaCodeRegionImpl(node);
+        }
+        else if (type == TeaElementTypes.IMPORT_DIRECTIVE) {
+            return new TeaImportDirectiveImpl(node);
+        }
+        else if (type == TeaElementTypes.CALL_STATEMENT) {
+            return new TeaCallExpressionImpl(node);
+        }
 
         //TODO: create PsiElement instances here!!
         return PsiUtil.NULL_PSI_ELEMENT;

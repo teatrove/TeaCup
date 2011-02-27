@@ -15,7 +15,7 @@ public final class TeaElementTypes {
     private TeaElementTypes(){}
 
     public static final IFileElementType FILE = new IFileElementType(Language.findInstance(TeaLanguage.class));
-    public static final IElementType IMPORT_STATEMENT = new TeaElementType("IMPORT_STATEMENT");
+    public static final IElementType IMPORT_DIRECTIVE = new TeaElementType("IMPORT_DIRECTIVE");
     public static final IElementType TEMPLATE_DECLARATION = new TeaElementType("TEMPLATE_DECLARATION");
     public static final IElementType PARAMETER_LIST = new TeaElementType("PARAMETER_LIST");
     public static final IElementType TYPE_DECLARATION = new TeaElementType("TYPE_DECLARATION");
@@ -24,7 +24,7 @@ public final class TeaElementTypes {
     public static final IElementType TYPE = new TeaElementType("TYPE");
     public static final IElementType ARGUMENT_LIST = new TeaElementType("ARGUMENT_LIST");
     public static final IElementType SUBSTITUTION_PARAMETER = new TeaElementType("SUBSTITUTION_PARAMETER");
-    public static final IElementType EMBEDDED_SCRIPT = new TeaElementType("EMBEDDED_SCRIPT");
+    public static final IElementType CODE_REGION = new TeaElementType("CODE_REGION");
     public static final IElementType PLAIN_TEXT = new TeaElementType("PLAIN_TEXT");
 
     // Statements

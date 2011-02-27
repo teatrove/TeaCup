@@ -108,7 +108,7 @@ public class TemplateParsing {
         parameterList.done(TeaElementTypes.PARAMETER_LIST);
     }
 
-    public static void parseEmbeddedScript(PsiBuilder builder) {
+    public static void parseCodeRegion(PsiBuilder builder) {
         final PsiBuilder.Marker scriptToken = builder.mark();
         if(builder.getTokenType() == TeaTokenTypes.LSCRIPT) {
             builder.advanceLexer();
@@ -117,14 +117,14 @@ public class TemplateParsing {
         while(builder.getTokenType() != TeaTokenTypes.RSCRIPT) {
             if(builder.eof()) {
 //                builder.error(TeaBundle.message("tea.parser.message.expected.rscript"));
-                scriptToken.done(TeaElementTypes.EMBEDDED_SCRIPT);
+                scriptToken.done(TeaElementTypes.CODE_REGION);
                 return;
             }
 
             StatementParsing.parseEmbeddedScriptBody(builder);
         }
         builder.advanceLexer();
-        scriptToken.done(TeaElementTypes.EMBEDDED_SCRIPT);
+        scriptToken.done(TeaElementTypes.CODE_REGION);
     }
 
 }

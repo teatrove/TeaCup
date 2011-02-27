@@ -17,7 +17,7 @@ public class StatementParsing {
 
     public static void parseSourceElement(PsiBuilder builder) {
         if(builder.getTokenType() == TeaTokenTypes.LSCRIPT) {
-            TemplateParsing.parseEmbeddedScript(builder);
+            TemplateParsing.parseCodeRegion(builder);
         }
         else if(builder.getTokenType() == TeaTokenTypes.PLAIN_TEXT) {
             final PsiBuilder.Marker plainText = builder.mark();
@@ -31,7 +31,7 @@ public class StatementParsing {
             TemplateParsing.parseTemplateDeclaration(builder);
         }
         else if(builder.getTokenType() == TeaTokenTypes.IMPORT_KEYWORD) {
-            StatementParsing.parseImportStatement(builder);
+            StatementParsing.parseImportDirective(builder);
         }
         else {
             parseStatement(builder);
@@ -148,14 +148,14 @@ public class StatementParsing {
         plainText.done(TeaElementTypes.PLAIN_TEXT);
     }
 
-    private static void parseImportStatement(PsiBuilder builder) {
+    private static void parseImportDirective(PsiBuilder builder) {
         final IElementType declType = builder.getTokenType();
         LOG.assertTrue(declType == TeaTokenTypes.IMPORT_KEYWORD);
         final PsiBuilder.Marker define = builder.mark();
         builder.advanceLexer();
         ExpressionParsing.parseName(builder);
         checkForSemicolon(builder);
-        define.done(TeaElementTypes.IMPORT_STATEMENT);
+        define.done(TeaElementTypes.IMPORT_DIRECTIVE);
     }
 
 
