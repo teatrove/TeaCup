@@ -3,7 +3,7 @@
     <id>tea</id>
     <description>Language Support for the scripting language Tea.</description>
     <version>0.5</version>
-    <category>Languages/Tea</category>
+    <category>Custom Languages</category>
     <vendor email="Brian.R.Jackson@disney.com" url="http://www.disney.com">The Walt Disney Company</vendor>
     <change-notes>
     <![CDATA[

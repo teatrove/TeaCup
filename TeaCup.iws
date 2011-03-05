@@ -40,9 +40,9 @@
   </component>
   <component name="ChangeListManager">
     <list id="af8d5cbd-51a7-4c3f-9f83-1e72ce7fc50a" name="Precompiled templates" comment="Reorganized code for IDEA 10.0" />
-    <list id="6985afa6-986a-4a73-8a3d-0bbb99ed972b" name="Default" comment="" />
-    <list default="true" id="345a6a80-56c4-42f6-8518-f6d2b0979a9c" name="TEACUP-1: Hitting Enter in a text block outside of a code region doesn't create new lines" comment="TEACUP-1: Hitting Enter in a text block outside of a code region doesn't create new lines">
+    <list default="true" id="6985afa6-986a-4a73-8a3d-0bbb99ed972b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/META-INF/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeaCup.iml" afterPath="$PROJECT_DIR$/TeaCup.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeaCup.iws" afterPath="$PROJECT_DIR$/TeaCup.iws" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
@@ -157,14 +157,14 @@
       <property name="field_breakpoints_flattenPackages" value="true" />
       <property name="exception_breakpoints_groupByMethods" value="false" />
       <property name="line_breakpoints_groupByClasses" value="true" />
-      <property name="field_breakpoints_groupByMethods" value="false" />
       <property name="method_breakpoints_viewId" value="TABLE" />
-      <property name="line_breakpoints_flattenPackages" value="true" />
+      <property name="field_breakpoints_groupByMethods" value="false" />
       <property name="field_breakpoints_groupByClasses" value="true" />
+      <property name="line_breakpoints_flattenPackages" value="true" />
       <property name="method_breakpoints_groupByClasses" value="true" />
       <property name="exception_breakpoints_viewId" value="TABLE" />
-      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
       <property name="method_breakpoints_groupByMethods" value="false" />
     </ui_properties>
   </component>
@@ -186,7 +186,7 @@
       <file leaf-file-name="plugin.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="11" selection-start="393" selection-end="393" vertical-scroll-proportion="0.24215247">
+            <state line="7" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.18834081">
               <folding />
             </state>
           </provider>
@@ -1373,20 +1373,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TeaCup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TeaCup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Favorites" />
@@ -1394,7 +1380,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1702,10 +1688,10 @@
     </columns>
   </component>
   <component name="TaskManager">
-    <task id="Default" summary="Default task">
+    <task active="true" id="Default" summary="Default task">
       <changelist id="6985afa6-986a-4a73-8a3d-0bbb99ed972b" name="Default" comment="" />
       <created>1265912373108</created>
-      <updated>1265922111495</updated>
+      <updated>1299348986344</updated>
     </task>
     <task id="LOCAL-00001" summary="Precompiled templates">
       <changelist id="af8d5cbd-51a7-4c3f-9f83-1e72ce7fc50a" name="Precompiled templates" comment="" />
@@ -1724,15 +1710,14 @@
       <created>1298838436867</created>
       <updated>1299348256298</updated>
     </task>
-    <task active="true" id="TEACUP-1" summary="Hitting Enter in a text block outside of a code region doesn't create new lines">
-      <changelist id="345a6a80-56c4-42f6-8518-f6d2b0979a9c" name="TEACUP-1: Hitting Enter in a text block outside of a code region doesn't create new lines" comment="" />
-      <changelist id="345a6a80-56c4-42f6-8518-f6d2b0979a9c" name="TEACUP-1: Hitting Enter in a text block outside of a code region doesn't create new lines" comment="" />
+    <task id="TEACUP-1" summary="Hitting Enter in a text block outside of a code region doesn't create new lines">
       <created>1299087749000</created>
       <option name="issue" value="true" />
       <option name="type" value="BUG" />
-      <updated>1299348256958</updated>
+      <updated>1299348986256</updated>
     </task>
     <option name="localTasksCounter" value="5" />
+    <option name="createChangelist" value="false" />
     <servers>
       <JIRA shared="false" url="http://jira.espn.com">
         <password>dff8dffbdfe5dfd9df9fdffa</password>
@@ -1766,8 +1751,9 @@
     <frame x="0" y="22" width="1440" height="819" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287483" sideWeight="0.0" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287483" sideWeight="0.0" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44704264" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2957359" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
@@ -1779,7 +1765,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24857838" sideWeight="0.66490066" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977018" sideWeight="0.6683217" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24514738" sideWeight="0.6712517" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24514738" sideWeight="0.6712517" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3204952" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1794,7 +1780,6 @@
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12926829" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44817373" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliJad Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4234694" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="BSFConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2001,7 +1986,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="11" selection-start="393" selection-end="393" vertical-scroll-proportion="0.24215247">
+        <state line="7" column="0" selection-start="352" selection-end="352" vertical-scroll-proportion="0.18834081">
           <folding />
         </state>
       </provider>
@@ -2052,9 +2037,28 @@
   </component>
   <component name="masterDetails">
     <states>
-      <state key="Copyright.UI">
+      <state key="ArtifactsStructureConfigurable.UI">
         <settings>
-          <splitter-proportions />
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
         </settings>
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
@@ -2069,9 +2073,40 @@
           </splitter-proportions>
         </settings>
       </state>
-      <state key="ScopeChooserConfigurable.UI">
+      <state key="JdkListConfigurable.UI">
         <settings>
-          <splitter-proportions />
+          <last-edited>1.4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>TeaCup</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>tomcat</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
         </settings>
       </state>
     </states>
