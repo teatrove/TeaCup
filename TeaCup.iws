@@ -41,7 +41,8 @@
   <component name="ChangeListManager">
     <list id="af8d5cbd-51a7-4c3f-9f83-1e72ce7fc50a" name="Precompiled templates" comment="Reorganized code for IDEA 10.0" />
     <list id="6985afa6-986a-4a73-8a3d-0bbb99ed972b" name="Default" comment="" />
-    <list default="true" id="345a6a80-56c4-42f6-8518-f6d2b0979a9c" name="TEACUP-1: Hitting Enter in a text block outside of a code region doesn't create new lines" comment="">
+    <list default="true" id="345a6a80-56c4-42f6-8518-f6d2b0979a9c" name="TEACUP-1: Hitting Enter in a text block outside of a code region doesn't create new lines" comment="TEACUP-1: Hitting Enter in a text block outside of a code region doesn't create new lines">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/META-INF/plugin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeaCup.iws" afterPath="$PROJECT_DIR$/TeaCup.iws" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
@@ -180,6 +181,19 @@
       </PATH>
     </subPane>
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="plugin.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="11" selection-start="393" selection-end="393" vertical-scroll-proportion="0.24215247">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -192,7 +206,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaParserDefinition.java" />
         <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaImportDirectiveImpl.java" />
         <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/TeaProjectSupportLoader.java" />
         <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/highlighting/TeaSyntaxHighlighterProvider.java" />
@@ -208,6 +221,7 @@
         <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaAssignmentStatement.java" />
         <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaAssignmentStatementImpl.java" />
         <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaReferenceExpressionImpl.java" />
+        <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
       </list>
     </option>
   </component>
@@ -1359,6 +1373,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Favorites" />
@@ -1738,7 +1766,7 @@
     <frame x="0" y="22" width="1440" height="819" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287483" sideWeight="0.0" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3287483" sideWeight="0.0" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2957359" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1751,7 +1779,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24857838" sideWeight="0.66490066" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977018" sideWeight="0.6683217" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24514738" sideWeight="0.6712517" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24514738" sideWeight="0.6712517" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3204952" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1800,7 +1828,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get 'isa' class references to resolve" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEACUP-1: Hitting Enter in a text block outside of a code region doesn't create new lines" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1817,6 +1845,7 @@
     <MESSAGE value="Fixed IllegalAccessError" />
     <MESSAGE value="Fix TeaPlainTextImpl invalid error" />
     <MESSAGE value="Get 'isa' class references to resolve" />
+    <MESSAGE value="TEACUP-1: Hitting Enter in a text block outside of a code region doesn't create new lines" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1877,11 +1906,6 @@
     <option name="myLastEditedConfigurable" value="Default" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="40" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaParameterList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="9" selection-start="171" selection-end="171" vertical-scroll-proportion="0.0" />
@@ -1971,6 +1995,13 @@
     <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaReferenceExpressionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="219" column="40" selection-start="9763" selection-end="9763" vertical-scroll-proportion="0.0883721">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="11" selection-start="393" selection-end="393" vertical-scroll-proportion="0.24215247">
           <folding />
         </state>
       </provider>

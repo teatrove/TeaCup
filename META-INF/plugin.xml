@@ -9,12 +9,13 @@
     <![CDATA[
         0.5
         <ul>
-        <li>Rewrote for IDEA 10.0</li>
+        <li>Refactored for IDEA 10.0</li>
+        <li>[TEACUP-1] Hitting Enter in a text block outside of a code region doesn't create new lines</li>
         </ul>
         <br>
         Known-issues:
         <ul>
-        <li>Adding new lines in plain-text blocks</li>
+        <li>None</li>
         </ul>
 
         0.4
