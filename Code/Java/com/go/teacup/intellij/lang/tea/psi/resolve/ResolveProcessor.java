@@ -23,6 +23,10 @@ public class ResolveProcessor implements PsiScopeProcessor {
         return result;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public boolean execute(PsiElement element, ResolveState resolveState) {
         if (element instanceof TeaNamedElement) {
             if (name.equals(((TeaNamedElement) element).getName())) {

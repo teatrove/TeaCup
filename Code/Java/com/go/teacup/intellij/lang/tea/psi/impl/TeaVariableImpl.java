@@ -3,6 +3,7 @@ package com.go.teacup.intellij.lang.tea.psi.impl;
 import com.go.teacup.intellij.lang.tea.lexer.TeaTokenTypes;
 import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
 import com.go.teacup.intellij.lang.tea.psi.TeaExpression;
+import com.go.teacup.intellij.lang.tea.psi.TeaReferenceExpression;
 import com.go.teacup.intellij.lang.tea.psi.TeaType;
 import com.go.teacup.intellij.lang.tea.psi.TeaVariable;
 import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
@@ -40,6 +41,10 @@ public class TeaVariableImpl extends TeaElementImpl implements TeaVariable {
 
     public ASTNode findNameIdentifier() {
       return getNode().findChildByType(TeaTokenTypes.IDENTIFIER);
+    }
+
+    public TeaReferenceExpression findNameExpression() {
+      return (TeaReferenceExpression) getNode().findChildByType(TeaElementTypes.REFERENCE_EXPRESSION).getPsi();
     }
 
     public void setInitializer(TeaExpression expr) throws IncorrectOperationException {

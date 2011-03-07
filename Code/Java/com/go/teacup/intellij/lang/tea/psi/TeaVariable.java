@@ -14,4 +14,6 @@ public interface TeaVariable extends TeaNamedElement {
     TeaType getType();
 //    boolean isConst();
     ASTNode findNameIdentifier();
+
+    TeaReferenceExpression findNameExpression();
 }

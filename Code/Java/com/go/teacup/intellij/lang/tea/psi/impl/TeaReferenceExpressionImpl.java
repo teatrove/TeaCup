@@ -50,7 +50,7 @@ public class TeaReferenceExpressionImpl extends TeaExpressionImpl implements Tea
 
     public PsiElement getElement() {
       return this;
-    }
+    } 
 
     public PsiReference getReference() {
       return this;

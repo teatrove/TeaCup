@@ -1,16 +1,17 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
 import com.go.teacup.intellij.lang.tea.parser.TeaElementTypes;
-import com.go.teacup.intellij.lang.tea.psi.TeaAssignmentStatement;
-import com.go.teacup.intellij.lang.tea.psi.TeaType;
-import com.go.teacup.intellij.lang.tea.psi.TeaVariable;
+import com.go.teacup.intellij.lang.tea.psi.*;
+import com.go.teacup.intellij.lang.tea.psi.resolve.ResolveProcessor;
 import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
 import com.intellij.lang.ASTNode;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiElementVisitor;
+import com.intellij.psi.PsiVariable;
 import com.intellij.psi.ResolveState;
 import com.intellij.psi.scope.PsiScopeProcessor;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * User: jacksbrr
@@ -42,14 +43,29 @@ public class TeaAssignmentStatementImpl extends TeaStatementImpl implements TeaA
 
     @Override
     public boolean processDeclarations(@NotNull PsiScopeProcessor processor, @NotNull ResolveState resolveState, PsiElement lastParent, @NotNull PsiElement place) {
-//        if (lastParent != null) {
-          final TeaVariable var = getVariable();
-          if (var != null) return processor.execute(var, resolveState);
-//          else {
-//            if (!processor.execute(getVariableExpression(), null)) return false;
-//          }
-//        }
+        if (lastParent != null) {
+          return true;
+        }
+
+        TeaExpression lValue = getVariable().findNameExpression();
+        if (lValue instanceof TeaReferenceExpression) {
+          String refName = processor instanceof ResolveProcessor ? ((ResolveProcessor) processor).getName() : null;
+          if (isDeclarationAssignment((TeaReferenceExpression) lValue, refName)) {
+            if (!processor.execute(lValue, ResolveState.initial())) return false;
+          }
+        }
+
         return true;
+    }
+
+    private static boolean isDeclarationAssignment(@NotNull TeaReferenceExpression lRefExpr, @Nullable String nameHint) {
+        if (nameHint == null || nameHint.equals(lRefExpr.getReferencedName())) {
+          final PsiElement target = lRefExpr.resolve(); //this is NOT quadratic since the next statement will prevent from further processing declarations upstream
+          if (!(target instanceof PsiVariable)) {
+            return true;
+          }
+        }
+        return false;
     }
 
 }
