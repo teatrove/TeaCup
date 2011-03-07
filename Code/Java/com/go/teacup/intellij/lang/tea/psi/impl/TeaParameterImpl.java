@@ -6,6 +6,7 @@ import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
 import com.intellij.lang.ASTNode;
 import com.intellij.psi.PsiElementVisitor;
 import com.intellij.util.Icons;
+import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
 
@@ -22,7 +23,7 @@ public class TeaParameterImpl extends TeaVariableImpl implements TeaParameter {
       return (TeaTemplate)getNode().getTreeParent().getTreeParent().getPsi();
     }
 
-    public void accept(PsiElementVisitor visitor) {
+    public void accept(@NotNull PsiElementVisitor visitor) {
       if (visitor instanceof TeaElementVisitor) {
         ((TeaElementVisitor)visitor).visitTeaParameter(this);
       }

@@ -13,6 +13,7 @@ import com.intellij.psi.PsiElementVisitor;
 import com.intellij.util.Icons;
 import com.intellij.util.IncorrectOperationException;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import javax.swing.*;
 
@@ -43,18 +44,30 @@ public class TeaVariableImpl extends TeaElementImpl implements TeaVariable {
       return getNode().findChildByType(TeaTokenTypes.IDENTIFIER);
     }
 
+    @Nullable
     public TeaReferenceExpression findNameExpression() {
-      return (TeaReferenceExpression) getNode().findChildByType(TeaElementTypes.REFERENCE_EXPRESSION).getPsi();
+        final ASTNode childByType = getNode().findChildByType(TeaElementTypes.REFERENCE_EXPRESSION);
+        if(childByType == null) {
+            return null;
+        }
+        return (TeaReferenceExpression) childByType.getPsi();
     }
 
     public void setInitializer(TeaExpression expr) throws IncorrectOperationException {
       throw new UnsupportedOperationException("TODO: implement");
     }
 
+    @Nullable
     public TeaType getType() {
       final ASTNode parent = getNode().getTreeParent();
       //TODO: only handles explicit type definitions
-      return (TeaType) parent.findChildByType(TeaElementTypes.TYPE).getPsi();
+        final ASTNode childByType = parent.findChildByType(TeaElementTypes.TYPE);
+
+        if(childByType == null) {
+            return null;
+        }
+
+        return (TeaType) childByType.getPsi();
     }
 
     public PsiElement setName(@NotNull String name) throws IncorrectOperationException {
