@@ -177,14 +177,15 @@ public class StatementParsing {
     }
 
     private static boolean parseAssignmentStatement(PsiBuilder builder) {
-//        if (builder.getTokenType() != TeaTokenTypes.IDENTIFIER) {
-//          builder.error(TeaBundle.message("tea.parser.message.expected.variable.name"));
-//          builder.advanceLexer();
-//          return false;
-//        }
         final PsiBuilder.Marker assignmentStatement = builder.mark();
         final PsiBuilder.Marker var = builder.mark();
-        builder.advanceLexer();
+        if (!ParsingUtil.parseIdentifier(builder)) {
+          builder.error(TeaBundle.message("tea.parser.message.expected.variable.name"));
+          var.rollbackTo(); // give expression parsing a chance
+          assignmentStatement.rollbackTo(); // give expression parsing a chance
+          return false;
+        }
+//        builder.advanceLexer();
         if (builder.getTokenType() == TeaTokenTypes.EQ) {
           builder.advanceLexer();
             if (!ExpressionParsing.parseAssignmentExpression(builder)) {
@@ -258,12 +259,11 @@ public class StatementParsing {
         final PsiBuilder.Marker foreachStatement = builder.mark();
         builder.advanceLexer();
         ParsingUtil.checkMatches(builder, TeaTokenTypes.LPAR, "( expected");
-        if (builder.getTokenType() != TeaTokenTypes.IDENTIFIER) {
+        final PsiBuilder.Marker var = builder.mark();
+        if (!ParsingUtil.parseIdentifier(builder)) {
             builder.error(TeaBundle.message("tea.parser.message.expected.variable.name"));
-            builder.advanceLexer();
+            var.drop();
         } else {
-            final PsiBuilder.Marker var = builder.mark();
-            builder.advanceLexer();
             var.done(TeaElementTypes.VARIABLE);
         }
 //        final PsiBuilder.Marker variable = builder.mark();
