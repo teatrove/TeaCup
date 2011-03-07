@@ -41,7 +41,15 @@ public class TeaVariableImpl extends TeaElementImpl implements TeaVariable {
     }
 
     public ASTNode findNameIdentifier() {
-      return getNode().findChildByType(TeaTokenTypes.IDENTIFIER);
+        final TeaReferenceExpression nameExpression = findNameExpression();
+        if(nameExpression == null) {
+            return getNode().findChildByType(TeaTokenTypes.IDENTIFIER);
+        }
+        final PsiElement referenceNameElement = nameExpression.getReferenceNameElement();
+        if(referenceNameElement == null) {
+            return getNode().findChildByType(TeaTokenTypes.IDENTIFIER);
+        }
+        return referenceNameElement.getNode();
     }
 
     @Nullable

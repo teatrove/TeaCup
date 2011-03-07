@@ -7,7 +7,6 @@ import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
 import com.intellij.lang.ASTNode;
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiElementVisitor;
-import com.intellij.psi.PsiVariable;
 import com.intellij.psi.ResolveState;
 import com.intellij.psi.scope.PsiScopeProcessor;
 import org.jetbrains.annotations.NotNull;
@@ -47,11 +46,11 @@ public class TeaAssignmentStatementImpl extends TeaStatementImpl implements TeaA
           return true;
         }
 
-        TeaExpression lValue = getVariable().findNameExpression();
-        if (lValue instanceof TeaReferenceExpression) {
+        TeaReferenceExpression ref = getVariable().findNameExpression();
+        if (ref != null) {
           String refName = processor instanceof ResolveProcessor ? ((ResolveProcessor) processor).getName() : null;
-          if (isDeclarationAssignment((TeaReferenceExpression) lValue, refName)) {
-            if (!processor.execute(lValue, ResolveState.initial())) return false;
+          if (isDeclarationAssignment(ref, refName)) {
+            if (!processor.execute(getVariable(), resolveState)) return false;
           }
         }
 
@@ -60,10 +59,8 @@ public class TeaAssignmentStatementImpl extends TeaStatementImpl implements TeaA
 
     private static boolean isDeclarationAssignment(@NotNull TeaReferenceExpression lRefExpr, @Nullable String nameHint) {
         if (nameHint == null || nameHint.equals(lRefExpr.getReferencedName())) {
-          final PsiElement target = lRefExpr.resolve(); //this is NOT quadratic since the next statement will prevent from further processing declarations upstream
-          if (!(target instanceof PsiVariable)) {
-            return true;
-          }
+            final PsiElement target = lRefExpr.resolve(); //this is NOT quadratic since the next statement will prevent from further processing declarations upstream
+            return target == null;
         }
         return false;
     }
