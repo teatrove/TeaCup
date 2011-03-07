@@ -13,7 +13,6 @@ import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
 import com.intellij.lang.ASTNode;
 import com.intellij.openapi.util.TextRange;
 import com.intellij.psi.*;
-import com.intellij.psi.util.PsiTreeUtil;
 import com.intellij.psi.xml.XmlAttributeValue;
 import com.intellij.util.IncorrectOperationException;
 import org.jetbrains.annotations.NonNls;
@@ -64,8 +63,7 @@ public class TeaReferenceExpressionImpl extends TeaExpressionImpl implements Tea
     }
 
     private ASTNode getNameElement() {
-        final TeaReferenceExpression childRef = PsiTreeUtil.getChildOfType(this, TeaReferenceExpression.class);
-        return (childRef == null || childRef.getNode() == null) ? null : childRef.getNode().findChildByType(TeaTokenTypes.IDENTIFIER);
+        return this.getNode().findChildByType(TeaTokenTypes.IDENTIFIER);
     }
 
     public PsiElement resolve() {
