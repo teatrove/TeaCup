@@ -402,11 +402,11 @@ public class VariantsProcessor extends BaseTeaSymbolProcessor implements PsiScop
       }
 
       if (isFromRelevantFileOrDirectory()) {
-        final Object o = addLookupValue(element, LookupPriority.HIGHEST);
+        final Object o = null;//addLookupValue(element, LookupPriority.HIGHEST);
         if (o != null) myNamesList.add(myThisFileNameListCount++, o);
         else myNames2CandidatesMap.remove(nameId);
       } else {
-        final Object o = addLookupValue(element, LookupPriority.HIGH);
+        final Object o = null;//addLookupValue(element, LookupPriority.HIGH);
         if (o != null) myNamesList.add(o);
         else myNames2CandidatesMap.remove(nameId);
       }
@@ -433,7 +433,7 @@ public class VariantsProcessor extends BaseTeaSymbolProcessor implements PsiScop
         targetNamesMap = myPartialMatchNamesMap;
       }
 
-      final Object o = addLookupValue(element,priority);
+      final Object o = null;//addLookupValue(element,priority);
 
       if (o != null) targetNamesMap.put(nameId, o);
       else myNames2CandidatesMap.remove(nameId);
