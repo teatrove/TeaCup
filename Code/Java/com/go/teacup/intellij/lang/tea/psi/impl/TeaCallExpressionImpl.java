@@ -24,7 +24,8 @@ public class TeaCallExpressionImpl extends TeaStatementImpl implements TeaCallEx
     }
 
     public TeaArgumentList getArgumentList() {
-      return (TeaArgumentList)getNode().findChildByType(TeaElementTypes.ARGUMENT_LIST).getPsi();
+        final ASTNode childByType = getNode().findChildByType(TeaElementTypes.ARGUMENT_LIST);
+        return childByType == null ? null : (TeaArgumentList) childByType.getPsi();
     }
 
     @Override
