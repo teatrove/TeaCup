@@ -4,6 +4,7 @@ import com.go.teacup.intellij.lang.tea.TeaBundle;
 import com.go.teacup.intellij.lang.tea.TeaFileTypeLoader;
 import com.go.teacup.intellij.lang.tea.psi.TeaFile;
 import com.go.teacup.intellij.lang.tea.psi.impl.TeaChangeUtil;
+import com.intellij.ProjectTopics;
 import com.intellij.lang.PsiBuilder;
 import com.intellij.navigation.NavigationItem;
 import com.intellij.openapi.application.ApplicationManager;
@@ -158,34 +159,35 @@ public class TeaIndex implements ProjectComponent {
       };
 
       VirtualFileManager.getInstance().addVirtualFileListener( myFileListener );
-      ProjectRootManager.getInstance(myProject).addModuleRootListener(
-        myRootListener = new ModuleRootListener() {
-          public void beforeRootsChange(ModuleRootEvent event) {}
+        
+        myProject.getMessageBus().connect().subscribe(ProjectTopics.PROJECT_ROOTS,
+            myRootListener = new ModuleRootListener() {
+              public void beforeRootsChange(ModuleRootEvent event) {}
 
-          public void rootsChanged(ModuleRootEvent event) {
-            Runnable runnable = new Runnable() {
-              public void run() {
-                if (myProject.isDisposed()) return; // we are already removed
-                myOldTeaFiles = myTeaFiles;
-                myTeaFiles = new THashMap<String, TeaIndexEntry>(myOldTeaFiles.size());
+              public void rootsChanged(ModuleRootEvent event) {
+                Runnable runnable = new Runnable() {
+                  public void run() {
+                    if (myProject.isDisposed()) return; // we are already removed
+                    myOldTeaFiles = myTeaFiles;
+                    myTeaFiles = new THashMap<String, TeaIndexEntry>(myOldTeaFiles.size());
 
-                if (ApplicationManager.getApplication().isUnitTestMode()) {
-                  myUpdateRunnable.run();
-                } else {
-                  ProgressManager.getInstance().runProcessWithProgressSynchronously(
-                    myUpdateRunnable,
-                    TeaBundle.message("building.index.message"),
-                    false,
-                    myProject
-                  );
-                }
+                    if (ApplicationManager.getApplication().isUnitTestMode()) {
+                      myUpdateRunnable.run();
+                    } else {
+                      ProgressManager.getInstance().runProcessWithProgressSynchronously(
+                        myUpdateRunnable,
+                        TeaBundle.message("building.index.message"),
+                        false,
+                        myProject
+                      );
+                    }
 
-                myOldTeaFiles = null;
+                    myOldTeaFiles = null;
+                  }
+                };
+                ApplicationManager.getApplication().invokeLater(runnable);
               }
-            };
-            ApplicationManager.getApplication().invokeLater(runnable);
-          }
-        }
+            }
       );
     }
 
