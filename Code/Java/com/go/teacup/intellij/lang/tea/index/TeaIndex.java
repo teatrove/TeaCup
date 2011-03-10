@@ -161,34 +161,35 @@ public class TeaIndex implements ProjectComponent {
       VirtualFileManager.getInstance().addVirtualFileListener( myFileListener );
         
         myProject.getMessageBus().connect().subscribe(ProjectTopics.PROJECT_ROOTS,
-            myRootListener = new ModuleRootListener() {
-              public void beforeRootsChange(ModuleRootEvent event) {}
-
-              public void rootsChanged(ModuleRootEvent event) {
-                Runnable runnable = new Runnable() {
-                  public void run() {
-                    if (myProject.isDisposed()) return; // we are already removed
-                    myOldTeaFiles = myTeaFiles;
-                    myTeaFiles = new THashMap<String, TeaIndexEntry>(myOldTeaFiles.size());
-
-                    if (ApplicationManager.getApplication().isUnitTestMode()) {
-                      myUpdateRunnable.run();
-                    } else {
-                      ProgressManager.getInstance().runProcessWithProgressSynchronously(
-                        myUpdateRunnable,
-                        TeaBundle.message("building.index.message"),
-                        false,
-                        myProject
-                      );
+                myRootListener = new ModuleRootListener() {
+                    public void beforeRootsChange(ModuleRootEvent event) {
                     }
 
-                    myOldTeaFiles = null;
-                  }
-                };
-                ApplicationManager.getApplication().invokeLater(runnable);
-              }
-            }
-      );
+                    public void rootsChanged(ModuleRootEvent event) {
+                        Runnable runnable = new Runnable() {
+                            public void run() {
+                                if (myProject.isDisposed()) return; // we are already removed
+                                myOldTeaFiles = myTeaFiles;
+                                myTeaFiles = new THashMap<String, TeaIndexEntry>(myOldTeaFiles.size());
+
+                                if (ApplicationManager.getApplication().isUnitTestMode()) {
+                                    myUpdateRunnable.run();
+                                } else {
+                                    ProgressManager.getInstance().runProcessWithProgressSynchronously(
+                                            myUpdateRunnable,
+                                            TeaBundle.message("building.index.message"),
+                                            false,
+                                            myProject
+                                    );
+                                }
+
+                                myOldTeaFiles = null;
+                            }
+                        };
+                        ApplicationManager.getApplication().invokeLater(runnable);
+                    }
+                }
+        );
     }
 
     private void initPredefines(ProgressIndicator progress) {
@@ -429,7 +430,7 @@ public class TeaIndex implements ProjectComponent {
       VirtualFileManager.getInstance().removeVirtualFileListener( myFileListener );
       myFileListener = null;
       PsiManager.getInstance(myProject).removePsiTreeChangeListener(myTreeChangeListener);
-      ProjectRootManager.getInstance(myProject).removeModuleRootListener(myRootListener);
+//      ProjectRootManager.getInstance(myProject).removeModuleRootListener(myRootListener);
 
       if (!ApplicationManager.getApplication().isUnitTestMode()) {
         saveCaches();
@@ -441,10 +442,10 @@ public class TeaIndex implements ProjectComponent {
       final String url = psiFile.getVirtualFile().getPath();
 
       if (myOldTeaFiles != null) {
-        final TeaIndexEntry jsIndexEntry = myOldTeaFiles.get(url);
+        final TeaIndexEntry teaIndexEntry = myOldTeaFiles.get(url);
 
-        if (jsIndexEntry != null) {
-          myTeaFiles.put(url,jsIndexEntry);
+        if (teaIndexEntry != null) {
+          myTeaFiles.put(url,teaIndexEntry);
           return;
         }
       }
@@ -456,12 +457,12 @@ public class TeaIndex implements ProjectComponent {
       myTeaFiles.put(url, new TeaIndexEntry(psiFile));
     }
 
-    private void processFileChanged(final TeaFile jsFile) {
-      if (!jsFile.isPhysical()) return;
-      final TeaIndexEntry indexEntry = myTeaFiles.get(jsFile.getVirtualFile().getPath());
+    private void processFileChanged(final TeaFile teaFile) {
+      if (!teaFile.isPhysical()) return;
+      final TeaIndexEntry indexEntry = myTeaFiles.get(teaFile.getVirtualFile().getPath());
 
       if (indexEntry == null) {
-        processFileAdded(jsFile);
+        processFileAdded(teaFile);
       }
     }
 

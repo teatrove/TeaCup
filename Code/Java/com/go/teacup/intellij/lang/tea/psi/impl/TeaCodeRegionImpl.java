@@ -9,7 +9,10 @@
 package com.go.teacup.intellij.lang.tea.psi.impl;
 
 import com.go.teacup.intellij.lang.tea.psi.TeaCodeRegion;
+import com.go.teacup.intellij.lang.tea.validation.TeaElementVisitor;
 import com.intellij.lang.ASTNode;
+import com.intellij.psi.PsiElementVisitor;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * TODO: Add documentation for TeaCodeRegionImpl
@@ -20,5 +23,15 @@ import com.intellij.lang.ASTNode;
 public class TeaCodeRegionImpl extends TeaElementImpl implements TeaCodeRegion {
     public TeaCodeRegionImpl(final ASTNode node) {
         super(node);
+    }
+
+    @Override
+    public void accept(@NotNull PsiElementVisitor visitor) {
+        if (visitor instanceof TeaElementVisitor) {
+          ((TeaElementVisitor)visitor).visitTeaCodeRegion(this);
+        }
+        else {
+          visitor.visitElement(this);
+        }
     }
 }

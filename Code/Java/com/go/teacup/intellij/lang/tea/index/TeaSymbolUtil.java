@@ -211,9 +211,10 @@ public class TeaSymbolUtil {
 
             if (name != null) {
                 int nameId = myIndex.getIndexOf(name);
-                if (node.getParent() instanceof PsiFile) { // global function declaration
-                    mySymbolVisitor.processTemplate(myNamespace, nameId, node);
-                }
+                mySymbolVisitor.processTemplate(myNamespace, nameId, node);
+//                if (node.getParent() instanceof PsiFile) { // global function declaration
+//                    mySymbolVisitor.processTemplate(myNamespace, nameId, node);
+//                }
                 processFunctionBody(myNamespace.getChildNamespace(nameId), node);
             }
         }

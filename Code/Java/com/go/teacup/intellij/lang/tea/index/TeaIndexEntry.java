@@ -196,11 +196,7 @@ public final class TeaIndexEntry {
               addSymbol(
                 nameId,
                 function,
-                null/*function instanceof TeaTemplateExpression ?
-                (function.getParent() instanceof TeaProperty ?
-                   TeaNamedElementProxy.NamedItemType.FunctionProperty :
-                   TeaNamedElementProxy.NamedItemType.FunctionExpression) :
-                TeaNamedElementProxy.NamedItemType.Template*/,
+                TeaNamedElementProxy.NamedItemType.Template,
                 namespace
               );
             }

@@ -2,15 +2,15 @@ package com.go.teacup.intellij.lang.tea.validation;
 
 import com.go.teacup.intellij.lang.tea.psi.*;
 import com.intellij.psi.PsiElementVisitor;
-import com.intellij.psi.PsiReferenceExpression;
 
 /**
  * User: JACKSBRR
  * Created: Apr 3, 2007 11:11:43 AM
  */
 public class TeaElementVisitor extends PsiElementVisitor {
-    public void visitReferenceExpression(PsiReferenceExpression expression) {
-        visitReferenceExpression(expression);
+
+    public void visitTeaCodeRegion(TeaCodeRegion codeRegion) {
+        visitTeaElement(codeRegion);
     }
 
     public void visitTeaCallExpression(final TeaCallExpression node) {
