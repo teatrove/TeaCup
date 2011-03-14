@@ -39,8 +39,10 @@
     <option name="USER" value="" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6985afa6-986a-4a73-8a3d-0bbb99ed972b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeaCup.ipr" afterPath="$PROJECT_DIR$/TeaCup.ipr" />
+    <list id="6985afa6-986a-4a73-8a3d-0bbb99ed972b" name="Default" comment="" />
+    <list id="be1cd7a5-f685-4f8c-ad46-85475d252ed9" name="TEACUP-10: Navigate through to declaration of called template" comment="TEACUP-10: Navigate through to declaration of called template.  Added support for tea namespace references (aka. &quot;call my.example.folder.path.myTemplate()&quot;)" />
+    <list default="true" id="6435f021-5956-4349-97ae-c918c41e2ddb" name="Prepare for release 0.6" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/META-INF/plugin.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TeaCup.iws" afterPath="$PROJECT_DIR$/TeaCup.iws" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
@@ -191,22 +193,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaType.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaTypeImpl.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaExpression.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaCallExpressionImpl.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaReferenceExpressionImpl.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaReferenceExpression.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/ResolveProcessor.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/TeaResolveUtil.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaVariable.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/util/TeaUtils.java" />
-        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/TeaParser.java" />
         <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/parsing/StatementParsing.java" />
         <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaAssignmentStatementImpl.java" />
         <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaVariableImpl.java" />
         <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/util/TeaLookupUtil.java" />
         <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/VariantsProcessor.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaArgumentListImpl.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaCallExpressionImpl.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaCodeRegionImpl.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/validation/TeaElementVisitor.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/TeaSymbolUtil.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/MyTeaNamedItem.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/DeserializationContext.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaReferenceExpressionImpl.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/TeaIndexEntry.java" />
+        <option value="$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/TeaIndex.java" />
+        <option value="$PROJECT_DIR$/META-INF/plugin.xml" />
       </list>
     </option>
   </component>
@@ -1224,7 +1226,26 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TeaCup" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -1341,21 +1362,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TeaCup" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Favorites" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
@@ -1367,15 +1379,15 @@
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../idea/plugins/groovy/src/org/jetbrains/plugins/groovy/lang/psi/impl/statements/expressions" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PsiViewer.ProjectComponent">
     <option name="HIGHLIGHT" value="false" />
@@ -1452,6 +1464,24 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
       <module name="" />
@@ -1478,24 +1508,6 @@
       <envs />
       <properties />
       <listeners />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -1590,9 +1602,17 @@
       <option name="PATH" value="$USER_HOME$/Library/Preferences/IntelliJIdea10/shelf/Get__isa__class_references_to_resolve1.patch" />
       <option name="DESCRIPTION" value="Get 'isa' class references to resolve" />
     </changelist>
+    <changelist date="1299529547737">
+      <option name="PATH" value="$USER_HOME$/Library/Preferences/IntelliJIdea10/shelf/TEACUP-7__foreach_variable_shadows_earlier_declaration.patch" />
+      <option name="DESCRIPTION" value="TEACUP-7: foreach variable shadows earlier declaration" />
+    </changelist>
     <recycled_changelist date="1299348382763">
       <option name="PATH" value="$USER_HOME$/Library/Preferences/IntelliJIdea10/shelf/Get__isa__class_references_to_resolve.patch" />
       <option name="DESCRIPTION" value="Get 'isa' class references to resolve" />
+    </recycled_changelist>
+    <recycled_changelist date="1299529547737">
+      <option name="PATH" value="$USER_HOME$/Library/Preferences/IntelliJIdea10/shelf/TEACUP-7__foreach_variable_shadows_earlier_declaration1.patch" />
+      <option name="DESCRIPTION" value="TEACUP-7: foreach variable shadows earlier declaration" />
     </recycled_changelist>
   </component>
   <component name="StarteamConfiguration">
@@ -1668,11 +1688,11 @@
     </columns>
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
+    <task id="Default" summary="Default task">
       <option name="associatedChangelistId" value="46c89ad3-8397-4ca6-891b-4573d0bc730f" />
       <changelist id="6985afa6-986a-4a73-8a3d-0bbb99ed972b" name="Default" comment="" />
       <created>1265912373108</created>
-      <updated>1299521946547</updated>
+      <updated>1299529480299</updated>
     </task>
     <task id="LOCAL-00001" summary="Precompiled templates">
       <created>1265921963974</created>
@@ -1690,19 +1710,19 @@
       <created>1298838436867</created>
       <updated>1299477279350</updated>
     </task>
-    <task id="TEACUP-5" summary="Variables first defined without 'define' keyword don't have references resolved">
-      <created>1299482167000</created>
+    <task id="TEACUP-7" summary="foreach variable shadows earlier declaration">
+      <created>1299521374000</created>
       <option name="issue" value="true" />
       <option name="type" value="BUG" />
-      <updated>1299521129204</updated>
+      <updated>1299530060765</updated>
     </task>
-    <task id="TEACUP-6" summary="NPE in VariantsProcessor">
-      <created>1299482253000</created>
-      <option name="issue" value="true" />
-      <option name="type" value="BUG" />
-      <updated>1299521946547</updated>
+    <task active="true" id="LOCAL-00005" summary="Prepare for release 0.6">
+      <changelist id="6435f021-5956-4349-97ae-c918c41e2ddb" name="Prepare for release 0.6" comment="" />
+      <changelist id="6435f021-5956-4349-97ae-c918c41e2ddb" name="Prepare for release 0.6" comment="" />
+      <created>1300139945881</created>
+      <updated>1300139949692</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="6" />
     <servers>
       <JIRA shared="false" url="http://jira.espn.com">
         <password>dff8dffbdfe5dfd9df9fdffa</password>
@@ -1733,44 +1753,44 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="3" y="22" width="1920" height="1104" extended-state="6" />
+    <frame x="1" y="22" width="1920" height="1103" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32806325" sideWeight="0.0" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32739863" sideWeight="0.0" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32114625" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32047477" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42228335" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29545453" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.0" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3201581" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31849653" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32912844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24857838" sideWeight="0.66490066" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.248023" sideWeight="0.6726272" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977018" sideWeight="0.6683217" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18225548" sideWeight="0.67193675" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977018" sideWeight="0.6726014" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="18" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10368787" sideWeight="0.67193675" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3204952" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32047477" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="simpleUML" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="File View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10368787" sideWeight="0.67193675" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="SQL" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929516" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Maven-2 Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12926829" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42228335" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="BSFConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="19" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.59977067" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
@@ -1798,7 +1818,7 @@
     <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="TEACUP-6: NPE in VariantsProcessor" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEACUP-10: Navigate through to declaration of called template.  Added support for tea namespace references (aka. &quot;call my.example.folder.path.myTemplate()&quot;)" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1823,6 +1843,12 @@
     <MESSAGE value="foreach variable and left operand of assignment are now references." />
     <MESSAGE value="TEACUP-5: Variables first defined without 'define' keyword don't have references resolved" />
     <MESSAGE value="TEACUP-6: NPE in VariantsProcessor" />
+    <MESSAGE value="TEACUP-7: foreach variable shadows earlier declaration" />
+    <MESSAGE value="Defend against NPE in TeaCallExpressionImpl" />
+    <MESSAGE value="Moved ModuleRootListener of TeaIndex from deprecated listener to MessageBus subscription." />
+    <MESSAGE value="First working version of resolving unqualified template references." />
+    <MESSAGE value="Fixed NPE when reloading cached tea index." />
+    <MESSAGE value="TEACUP-10: Navigate through to declaration of called template.  Added support for tea namespace references (aka. &quot;call my.example.folder.path.myTemplate()&quot;)" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1883,116 +1909,110 @@
     <option name="myLastEditedConfigurable" value="Default" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaParameterImpl.java">
+    <entry file="file://$PROJECT_DIR$/../idea/platform/platform-impl/src/com/intellij/ide/startup/impl/StartupManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
+        <state line="190" column="0" selection-start="7587" selection-end="7587" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/TeaTypeEvaluateManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="35" selection-start="5479" selection-end="5479" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaChangeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/SerializationContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="49" selection-start="424" selection-end="436" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaTemplateImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0">
+        <state line="89" column="0" selection-start="3373" selection-end="3373" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../idea/platform/lang-api/src/com/intellij/psi/PsiNamedElement.java">
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/validation/TeaElementVisitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="923" selection-end="923" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaCodeRegionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="900" selection-end="900" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/TeaSymbolUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaNamedElement.java">
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/TeaNamespace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="44" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+        <state line="118" column="24" selection-start="3713" selection-end="3713" vertical-scroll-proportion="0.32565284">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaElementImpl.java">
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/DeserializationContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaDefineStatementImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="1858" selection-end="1858" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../idea/platform/lang-api/src/com/intellij/psi/scope/PsiScopeProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="10" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/ResolveProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaVariable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaAssignmentStatementImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="2339" selection-end="2339" vertical-scroll-proportion="0.0">
+        <state line="15" column="42" selection-start="476" selection-end="476" vertical-scroll-proportion="0.22119816">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaReferenceExpressionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="34" selection-start="1842" selection-end="1842" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/TeaReferenceExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="15" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
+        <state line="252" column="60" selection-start="10934" selection-end="10934" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/impl/TeaVariableImpl.java">
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/TeaIndex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="0" selection-start="1886" selection-end="1886" vertical-scroll-proportion="0.0">
+        <state line="122" column="0" selection-start="5431" selection-end="5431" vertical-scroll-proportion="0.32104453">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/parser/parsing/StatementParsing.java">
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/index/TeaIndexEntry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="279" column="0" selection-start="10206" selection-end="10206" vertical-scroll-proportion="0.0">
+        <state line="198" column="24" selection-start="8121" selection-end="8121" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/util/TeaLookupUtil.java">
+    <entry file="file://$PROJECT_DIR$/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="34" selection-start="780" selection-end="780" vertical-scroll-proportion="0.42396313">
+        <state line="10" column="13" selection-start="513" selection-end="513" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/VariantsProcessor.java">
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/BaseTeaSymbolProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="382" column="16" selection-start="15355" selection-end="15355" vertical-scroll-proportion="0.4423963">
+        <state line="35" column="0" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Code/Java/com/go/teacup/intellij/lang/tea/psi/resolve/WalkUpResolveProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="9" selection-start="2511" selection-end="2511" vertical-scroll-proportion="0.1781874">
           <folding />
         </state>
       </provider>
@@ -2055,11 +2075,6 @@
           </splitter-proportions>
         </settings>
       </state>
-      <state key="Copyright.UI">
-        <settings>
-          <splitter-proportions />
-        </settings>
-      </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
           <last-edited>Android</last-edited>
@@ -2103,7 +2118,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -2119,11 +2133,6 @@
               </list>
             </option>
           </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions />
         </settings>
       </state>
     </states>

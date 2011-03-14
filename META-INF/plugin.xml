@@ -1,13 +1,41 @@
-<idea-plugin version="2" use-idea-classloader="true">
+<idea-plugin version="2" url="http://teatrove.sourceforge.net" use-idea-classloader="true">
+    <depends>com.intellij.modules.lang</depends>
+    <depends optional="true">com.intellij.modules.java</depends>
     <name>TeaCup</name>
     <id>tea</id>
     <description>Language Support for the scripting language Tea.</description>
-    <version>0.5</version>
+    <version>0.6</version>
     <category>Custom Languages</category>
-    <vendor email="Brian.R.Jackson@disney.com" url="http://www.disney.com">The Walt Disney Company</vendor>
+    <vendor email="Brian.R.Jackson@espn.com" url="http://www.espn.com">ESPN</vendor>
     <change-notes>
     <![CDATA[
-        0.5
+        <h1>Release Notes - TeaCup - Version 0.6</h1>
+
+<h2>        Bug
+</h2>
+<ul>
+<li>[<a href='http://jira.espn.com/browse/TEACUP-3'>TEACUP-3</a>] -         Get variables with later assignments resolving correctly
+</li>
+<li>[<a href='http://jira.espn.com/browse/TEACUP-4'>TEACUP-4</a>] -         Attempting to rename parameter, claims invalid identifier
+</li>
+<li>[<a href='http://jira.espn.com/browse/TEACUP-5'>TEACUP-5</a>] -         Variables first defined without &#39;define&#39; keyword don&#39;t have references resolved
+</li>
+<li>[<a href='http://jira.espn.com/browse/TEACUP-6'>TEACUP-6</a>] -         NPE in VariantsProcessor
+</li>
+<li>[<a href='http://jira.espn.com/browse/TEACUP-9'>TEACUP-9</a>] -         Renaming template parameter replaces type instead of parameter name
+</li>
+</ul>
+
+<h2>        New Feature
+</h2>
+<ul>
+<li>[<a href='http://jira.espn.com/browse/TEACUP-10'>TEACUP-10</a>] -         Navigate through to declaration of called template
+</li>
+</ul>
+
+See <a href="http://jira.espn.com/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+TEACUP+AND+status+%3D+Open+ORDER+BY+priority+DESC&mode=hide">Open Issues</a>
+
+        <h1>Release Notes - TeaCup - Version 0.5 (March 7, 2011)</h1>
         <ul>
         <li>Refactored for IDEA 10.0</li>
         <li>[TEACUP-1] Hitting Enter in a text block outside of a code region doesn't create new lines</li>
@@ -18,7 +46,7 @@
         <li>None</li>
         </ul>
 
-        0.4
+        <h1>Release Notes - TeaCup - Version 0.4</h1>
         <ul>
         <li>Rewrote for IDEA 8.1</li>
         </ul>
@@ -28,7 +56,7 @@
         <li>Adding new lines in plain-text blocks</li>
         </ul>
 
-        0.3
+        <h1>Release Notes - TeaCup - Version 0.3</h1>
         <ul>
         <li>Added language injection into static text blocks based on contentType call.</li>
         <li>Added JVM-level debugging support.  Templates must be under a folder marked as source. Viewing scoped variables requires Trove 1.6.2-espn.</li>
@@ -41,7 +69,7 @@
         <li>Language injection doesn't update contentType properly.  Requires restart if contentType changes.</li>
         </ul>
 
-        0.2
+        <h1>Release Notes - TeaCup - Version 0.2 (March 7, 2011)</h1>
         <ul>
         <li>Added brace matching</li>
         <li>Added folding for block statements</li>
