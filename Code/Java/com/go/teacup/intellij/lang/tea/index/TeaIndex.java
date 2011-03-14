@@ -48,6 +48,7 @@ public class TeaIndex implements ProjectComponent {
     private THashMap<String, TeaIndexEntry> myTeaFiles = new THashMap<String, TeaIndexEntry>();
     private THashMap<String, TeaIndexEntry> myPredefinedTeaFiles = new THashMap<String, TeaIndexEntry>();
     private static Key<TeaIndexEntry> ourEntryKey = Key.create("js.indexentry");
+    private TeaNamespace rootNamespace = new TeaNamespace();
 
     private TeaTreeChangeListener myTreeChangeListener;
     private VirtualFileListener myFileListener;
@@ -221,7 +222,7 @@ public class TeaIndex implements ProjectComponent {
         final int fileCount = input.readInt();
         final PsiManager manager = PsiManager.getInstance(myProject);
         final int namesCount = input.readInt();
-        DeserializationContext context = new DeserializationContext(input, manager, myIndex2Names);
+        DeserializationContext context = new DeserializationContext(input, manager, myIndex2Names, rootNamespace);
 
         myIndex2Names.ensureCapacity( namesCount );
         myNames2Index.ensureCapacity( namesCount );
@@ -413,7 +414,7 @@ public class TeaIndex implements ProjectComponent {
       final TeaFile fileFromText = createPredefinesFile(fileName);
 
       if (fileFromText != null) {
-        final TeaIndexEntry value = new TeaIndexEntry(fileFromText);
+        final TeaIndexEntry value = new TeaIndexEntry(fileFromText, getTeaNamespace(fileFromText));
         myPredefinedTeaFiles.put(fileName, value);
         value.initTypesAndBrowserSpecifics();
       }
@@ -454,7 +455,7 @@ public class TeaIndex implements ProjectComponent {
       if (progress != null) {
         progress.setText2(psiFile.getVirtualFile().getPresentableUrl());
       }
-      myTeaFiles.put(url, new TeaIndexEntry(psiFile));
+      myTeaFiles.put(url, new TeaIndexEntry(psiFile, getTeaNamespace(psiFile)));
     }
 
     private void processFileChanged(final TeaFile teaFile) {
@@ -505,6 +506,25 @@ public class TeaIndex implements ProjectComponent {
       return symbolNavItems.toArray(new NavigationItem[symbolNavItems.size()]);
     }
 
+    public TeaNamespace getRootNamespace() {
+        return rootNamespace;
+    }
+
+    public TeaNamespace getTeaNamespace(PsiFile containingFile) {
+        return getTeaNamespace(containingFile.getContainingDirectory());
+    }
+
+    public TeaNamespace getTeaNamespace(PsiDirectory containingDirectory) {
+        // TODO: Assumes src/main/tea
+        if(containingDirectory.getName().equals("tea")
+                && containingDirectory.getParent().getName().equals("main")
+                && containingDirectory.getParent().getParent().getName().equals("src")) {
+            return this.getRootNamespace();
+        }
+
+        return getTeaNamespace(containingDirectory.getParentDirectory()).getChildNamespace(this.getIndexOf(containingDirectory.getName()));
+    }
+
     public void clear() {
       myTeaFiles.clear();
       myPredefinedTeaFiles.clear();
@@ -547,7 +567,7 @@ public class TeaIndex implements ProjectComponent {
         TeaIndexEntry ourEntry = psiFile.getUserData(ourEntryKey);
 
         if (ourEntry == null) {
-          ourEntry = new TeaIndexEntry(processor.getBaseFile());
+          ourEntry = new TeaIndexEntry(processor.getBaseFile(), getTeaNamespace(processor.getBaseFile()));
           psiFile.putUserData(ourEntryKey, ourEntry);
         }
         ourEntry.processSymbols(processor);

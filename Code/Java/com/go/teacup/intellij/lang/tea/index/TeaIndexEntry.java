@@ -106,15 +106,18 @@ public final class TeaIndexEntry {
     static class IndexEntryContent {
       private final TIntObjectHashMap<Object> mySymbols = new TIntObjectHashMap<Object>();
       private Map<TeaNamedElement,TeaNamespace> mySymbolNameComponents = new THashMap<TeaNamedElement,TeaNamespace>();
-      private final TeaNamespace myNamespace = new TeaNamespace();
+      final private TeaNamespace myNamespace;
+
+        IndexEntryContent(TeaNamespace myNamespace) {
+            this.myNamespace = myNamespace;
+        }
     }
 
     private CachedValue<IndexEntryContent> myIndexValue;
     private IndexEntryContent myContent;
 
     public TeaIndexEntry(final DeserializationContext context, @Nullable TeaFile file) throws IOException {
-      final IndexEntryContent indexEntryContent = new IndexEntryContent();
-      indexEntryContent.myNamespace.read(context, null);
+      final IndexEntryContent indexEntryContent = new IndexEntryContent(new TeaNamespace().read(context, null));
 
       int mySymbolNameComponentsSize = context.inputStream.readInt();
 
@@ -125,11 +128,11 @@ public final class TeaIndexEntry {
         doAddNamedItemProxy(proxy.getNameId(), proxy, false, namespace, indexEntryContent);
       }
 
-      doInitFor(file, context.manager, indexEntryContent);
+      doInitFor(file, context.manager, indexEntryContent, indexEntryContent.myNamespace);
     }
 
-    public TeaIndexEntry(final PsiFile psiFile) {
-      doInitFor(psiFile, psiFile.getManager(), null);
+    public TeaIndexEntry(final PsiFile psiFile, final TeaNamespace teaNamespace) {
+      doInitFor(psiFile, psiFile.getManager(), null, teaNamespace);
       myIndexValue.getValue();
     }
 
@@ -165,13 +168,13 @@ public final class TeaIndexEntry {
       myContent.mySymbolNameComponents.put(myElement, namespace);
     }
 
-    private void doInitFor(final PsiFile psiFile, PsiManager manager, final IndexEntryContent content) {
+    private void doInitFor(final PsiFile psiFile, PsiManager manager, final IndexEntryContent content, final TeaNamespace teaNamespace) {
       myPsiFile = psiFile;
       myIndexValue = manager.getCachedValuesManager().createCachedValue(new CachedValueProvider<IndexEntryContent>() {
         boolean computeFirstTime = true;
 
         public CachedValueProvider.Result<IndexEntryContent> compute() {
-          myContent = content != null ? content : new IndexEntryContent();
+          myContent = content != null ? content : new IndexEntryContent(teaNamespace);
 
           if (computeFirstTime) {
             computeFirstTime = false;

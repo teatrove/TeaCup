@@ -1,10 +1,9 @@
 package com.go.teacup.intellij.lang.tea.index;
 
 import com.intellij.psi.PsiManager;
+import gnu.trove.TIntObjectHashMap;
 
 import java.io.DataInputStream;
-
-import gnu.trove.TIntObjectHashMap;
 
 /**
  * User: JACKSBRR
@@ -17,10 +16,11 @@ public class DeserializationContext {
     final TeaTypeEvaluateManager typeEvaluateManager;
     final PsiManager manager;
 
-    DeserializationContext(DataInputStream _inputStream, PsiManager _manager, TIntObjectHashMap<String> names) {
+    DeserializationContext(DataInputStream _inputStream, PsiManager _manager, TIntObjectHashMap<String> names, TeaNamespace rootNamespace) {
       inputStream = _inputStream;
       manager = _manager;
       myNames =  names;
       typeEvaluateManager = TeaTypeEvaluateManager.getInstance(manager.getProject());
+      myNameSpaces.put(-1, rootNamespace);
     }
 }

@@ -250,7 +250,7 @@ public class TeaReferenceExpressionImpl extends TeaExpressionImpl implements Tea
 
       final WalkUpResolveProcessor processor = new WalkUpResolveProcessor(
         getText(),
-        TeaSymbolUtil.buildNameIndexArray(this, null, TeaIndex.getInstance(containingFile.getProject())),
+        TeaSymbolUtil.buildNameIndexArray(this, TeaIndex.getInstance(containingFile.getProject()).getTeaNamespace(containingFile), TeaIndex.getInstance(containingFile.getProject())),
         containingFile,
         false,
         this
@@ -258,4 +258,5 @@ public class TeaReferenceExpressionImpl extends TeaExpressionImpl implements Tea
 
       return TeaResolveUtil.resolve(containingFile, processor);
     }
+
 }
