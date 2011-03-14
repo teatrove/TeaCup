@@ -175,7 +175,7 @@ public class MyTeaNamedItem extends PsiElementBase implements TeaNamedElementPro
       final int valueTag = myValueType == NamedItemType.Definition
                            ? DEFINITION_TAG
                            : myValueType == NamedItemType.Template
-              ? FUNCTION_TAG
+                             ? FUNCTION_TAG
                              : myValueType == NamedItemType.FunctionExpression
                                ? FUNCTION_EXPRESSION_TAG
                                : myValueType == NamedItemType.FunctionProperty
@@ -187,7 +187,7 @@ public class MyTeaNamedItem extends PsiElementBase implements TeaNamedElementPro
 //      final int browserSpecific =
 //        (context.browserSupportManager.isGeckoSpecificSymbol(this) ? GECKO_SPECIFIC_ITEM_TAG:
 //          context.browserSupportManager.isIESpecificSymbol(this) ? IE_SPECIFIC_ITEM_TAG:0) << BROWSER_TAG_SHIFT;
-//      context.outputStream.writeByte(valueTag | browserSpecific);
+      context.outputStream.writeByte(valueTag);
 
       String elementType = context.typeEvaluateManager.getElementType(this);
       if (elementType == null) elementType = "";
